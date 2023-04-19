@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Error = () => {
+const PRico = () => {
   return (
     <div>
-      <h1>404</h1>
+      <h1>pr</h1>
     </div>
   )
 }
 
-export default Error
+export default PRico

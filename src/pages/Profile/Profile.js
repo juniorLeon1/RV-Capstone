@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Error = () => {
+const User = () => {
   return (
     <div>
-      <h1>404</h1>
+      <h1>user!</h1>
     </div>
   )
 }
 
-export default Error
+export default User
