@@ -1,0 +1,28 @@
+.drpdwn-menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.drpdwn-menu-wrap.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+
+.drpdwn-menu-wrap:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drpdwn-menu-wrap.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20);
+  transition: 500ms ease;
+}
