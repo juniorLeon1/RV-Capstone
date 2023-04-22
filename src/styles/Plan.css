@@ -1,0 +1,27 @@
+.HomeContainer img {
+    width: 533px;
+    height: 533px;
+    border-radius: 50%;
+}
+.HomeContainer {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+column-gap: 50px;
+margin: 50px;
+}
+
+/* .Grid-item img {
+    max-width: 60%;
+} */
+
+.Plan-button {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #fbb152;
+        padding: 19px 45px 20px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fbb152;
+        letter-spacing: 2px;
+        margin: 30px;
+}
