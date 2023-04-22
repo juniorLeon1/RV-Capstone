@@ -1,0 +1,31 @@
+
+.Experience {
+    padding-top: 60px;
+}
+
+
+.expContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.expCard {
+    width: 18rem;
+    text-align: center;
+    background-color: rgb(222, 227, 227);
+}
+
+.expText {
+    text-align: center;
+margin: 22px auto;
+}
+
+
+.expImg {
+    max-block-size: 10rem;
+    padding-bottom: 20px;
+}
+
