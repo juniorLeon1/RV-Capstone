@@ -5,11 +5,8 @@ import Luggage from "../../images/luggage.png";
 import Sun from "../../images/sunrise.png";
 import Ticket from "../../images/ticket.png";
 import "../../styles/Experience.css";
-
 import { motion, useAnimation } from "framer-motion";
-
 import { useInView } from "react-intersection-observer";
-
 import { useEffect } from "react";
 
 const boxVariant = {
