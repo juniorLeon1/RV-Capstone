@@ -1,0 +1,58 @@
+
+.Backdrop {
+    background-color: #fbb25289;
+   /* max-width: 960px; */
+   margin: 100px auto;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: 10% 10% 10% 10% 40%;
+   grid-template-rows: auto 20% 40%;
+
+}
+.Item {
+    transition: ease-in;
+}
+
+.Person {
+    height: 507px;
+    width: 507px;
+    z-index: 2;
+    border-radius: 50%;
+    grid-column-start: 1 !important;
+    grid-column-end: 5;
+    grid-row: 3 / span 3;
+    /* margin: -128px auto 60px 377px; */
+}
+
+.Circle {
+    height: 160px;
+    width: 160px;
+    z-index: 3;
+    grid-column: 4/ span 5;
+    margin: -150px -200px;
+
+}
+.FeaText {
+    background-color: white;
+    grid-column: 3 / span 3;
+    grid-row: 1 / span 3;
+    text-align: right;
+    padding: 30px;
+    margin-top: 40px;
+}
+.FeaButton {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fbb152;
+    padding: 19px 45px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fbb152;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+.FeaButton:hover {
+    color: white;
+    border-color: #fbb152;
+    background-color: #fbb152;
+  }
