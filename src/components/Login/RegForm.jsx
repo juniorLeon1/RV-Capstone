@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "../../styles/LoginForms.css";
 
-const LoginForm = (props) => {
+const RegForm = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const [name, setName] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -12,25 +13,32 @@ const LoginForm = (props) => {
 
   return (
     <div className="auth-form-container">
-
       <div className="switch-auth">
         <button
           onClick={() => props.onFormSwitch("login")}
-          className={`switch-button ${
-            props.formValue === "login" ? "active-switch" : "inactive-switch"
-          }`}
+          className="switch-button"
         >
           Log In
         </button>
         <button
           onClick={() => props.onFormSwitch("register")}
-          className="switch-button"
+          className={`switch-button ${props.formValue === "register" ? "active-switch": "inactive-switch"}`}
         >
           Sign Up
         </button>
       </div>
 
-      <form className="login-form" onSubmit={handleSubmit}>
+      <form className="register-form" onSubmit={handleSubmit}>
+        <input
+          className="name-input"
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+          id="name"
+          name="name"
+          placeholder="Full Name"
+          required
+        />
+
         <input
           className="email-input"
           value={email}
@@ -53,19 +61,12 @@ const LoginForm = (props) => {
           required
         />
 
-        <button
-          onClick={() => props.onFormSwitch("forgot")}
-          className="forgot-button"
-        >
-          Forgot your password?
-        </button>
-
         <button type="submit" className="submit-button">
-          Log In
+          Register
         </button>
       </form>
     </div>
   );
 };
 
-export default LoginForm;
+export default RegForm;
