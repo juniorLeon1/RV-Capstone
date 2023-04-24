@@ -5,7 +5,6 @@ import Dropdown from "./Dropdown";
 
 function Navbar() {
   const [destDrpdwnToggle, setDestDrpdwnToggle] = useState(false);
-  const [profileDrpdwnToggle, setProfileDrpdwnToggle] = useState(false);
 
   return (
     <nav className="navbar-container">
@@ -23,6 +22,13 @@ function Navbar() {
 
       {/* right side */}
       <ul className="navbar-links-container">
+        
+        <li className="navigation-item">
+          <Link to="/login" className="navigation-link">
+            Login
+          </Link>
+        </li>
+
         <li
           className="navigation-item"
           onMouseLeave={() => {
@@ -61,41 +67,6 @@ function Navbar() {
               {
                 item: "Puerto Rico",
                 url: "/destinations/puerto-rico",
-              },
-            ]}
-          />
-        </li>
-        <li
-          className="navigation-item"
-          onMouseLeave={() => {
-            setProfileDrpdwnToggle(!profileDrpdwnToggle);
-          }}
-        >
-          <Link
-            to="/profile"
-            className="navigation-link"
-            onMouseEnter={() => {
-              setProfileDrpdwnToggle(!profileDrpdwnToggle);
-            }}
-          >
-            Profile{" "}
-            <i
-              className={`fa-solid fa-caret-down fa-rotate-90 drpdwn-arrow ${
-                profileDrpdwnToggle ? "active" : "inactive"
-              }`}
-            ></i>
-          </Link>
-
-          <Dropdown
-            toggled={profileDrpdwnToggle}
-            menu={[
-              {
-                item: "Login",
-                url: "/login",
-              },
-              {
-                item: "Register",
-                url: "/registration",
               },
             ]}
           />

@@ -1,9 +1,9 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 90px;
+    padding: 10px 100px;
     align-items: center;
-    background-color: transparent;
+    background-color: white;
 }
 
 .web-name {
