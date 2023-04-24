@@ -7,12 +7,11 @@ const LoginForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email)
+    console.log(email);
   };
 
   return (
     <div className="auth-form-container">
-
       <div className="switch-auth">
         <button
           onClick={() => props.onFormSwitch("login")}

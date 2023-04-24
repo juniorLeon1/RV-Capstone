@@ -60,6 +60,7 @@
   cursor: pointer;
   color: #120940;
   margin-top: 30px;
+  width: 100%;
 }
 
 .submit-button:hover {

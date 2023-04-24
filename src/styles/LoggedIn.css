@@ -1,0 +1,45 @@
+.header-background {
+    background-image: url(../images/header-background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 35vh;
+    display: flex;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.left-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 50px 50px;
+}
+
+.profile-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fbb152;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-initial {
+    margin: 0;
+}
+
+.user-info {
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-name,
+.this-email {
+    margin: 0;
+}
