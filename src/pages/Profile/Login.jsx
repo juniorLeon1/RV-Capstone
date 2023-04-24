@@ -28,16 +28,6 @@ const Login = () => {
   return (
     <div className="auth-container">
       {renderForms()}
-
-      {/* {currentForm === "login" ? (
-        <LoginForm onFormSwitch={toggleForm} formValue={currentForm} />
-      ) : (
-        <RegForm onFormSwitch={toggleForm} formValue={currentForm} />
-      )} */}
-
-      {/* <LoginForm onFormSwitch={toggleForm} formValue={currentForm} />
-      <RegForm onFormSwitch={toggleForm} formValue={currentForm} />
-      <ForgotPassForm onFormSwitch={toggleForm} formValue={currentForm} /> */}
     </div>
   );
 };

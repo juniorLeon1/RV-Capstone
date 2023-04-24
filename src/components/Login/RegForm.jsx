@@ -35,7 +35,7 @@ const RegForm = (props) => {
           onChange={(event) => setName(event.target.value)}
           id="name"
           name="name"
-          placeholder="Full Name"
+          placeholder="Your name"
           required
         />
 

@@ -21,8 +21,19 @@ db.connect(err => {
     console.log("Connected to MySQL database")
 });
 
-app.get("/", (req, res) => {
+app.get("/destinations", (req, res) => {
     const q = "SELECT * FROM destination";
+    db.query(q, (err, data) => {
+        if (err) {
+            console.log(err);
+            return res.json(err);
+        }
+        return res.json(data);
+    });
+});
+
+app.get("/users", (req, res) => {
+    const q = "SELECT * FROM users";
     db.query(q, (err, data) => {
         if (err) {
             console.log(err);
