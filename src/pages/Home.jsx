@@ -1,8 +1,8 @@
 import React from 'react'
-import Experience from '../components/Home/Experience'
-import Hero from '../components/Home/Hero'
-import Plan from '../components/Home/Plan'
-import CircleSmall from '../components/Home/CircleSmall'
+import Experience from '../components/Home componets/Experience'
+import Hero from '../components/Home componets/Hero'
+import Plan from '../components/Home componets/Plan'
+import CircleSmall from '../components/Home componets/CircleSmall'
 
 
 const Home = () => {
