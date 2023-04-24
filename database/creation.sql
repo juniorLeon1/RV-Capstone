@@ -33,7 +33,9 @@ use avoTravelerDB;
 -- ("Admin", "Diana Capellan", "dcapellan12@r2hstudent.org", "AvoTrav$43"),
 -- ("Admin", "Joseph Vang", "jvang12@r2hstudent.org", "Honeybacon121");
 
-SELECT * FROM users;
+	INSERT INTO users (roles, userNames, email, passwords)
+    VALUES
+    ("User", "John Doe", "johnD@gmail.com", "password123");
 
 -- ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
 -- GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
