@@ -6,7 +6,7 @@ const ForgotPassForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email)
+    console.log(email);
   };
 
   return (
@@ -34,7 +34,9 @@ const ForgotPassForm = (props) => {
           required
         />
 
-        <button className="submit-button" type="submit">Send Email</button>
+        <button className="submit-button" type="submit">
+          Send Email
+        </button>
       </form>
     </div>
   );
