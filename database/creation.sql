@@ -15,5 +15,30 @@ use avoTravelerDB;
 --     ('San Juan, Puerto Rico','../../images/sanjuanSkyline.png',-66.105721,18.466333),
 --     ('São Paulo, Brazil','../../images/saopauloSkyline.png',-46.625290,-23.533773);
 
-ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
+
+
+-- CREATE TABLE users (
+-- 	id				INT		AUTO_INCREMENT		PRIMARY KEY,
+--     roles			VARCHAR(10),
+-- 	userNames		VARCHAR(40),
+--     email			VARCHAR(40)		UNIQUE KEY,
+--     passwords		VARCHAR(16)
+-- );
+
+
+-- INSERT INTO users (roles, userNames, email, passwords) 
+-- VALUES
+-- ("Admin", "Junior Leon", "jleon12@r2hstudent.org", "admin321"),
+-- ("Admin", "Ching Vang", "chingvang12@r2hstudent.org", "adminadmin456"),
+-- ("Admin", "Diana Capellan", "dcapellan12@r2hstudent.org", "AvoTrav$43"),
+-- ("Admin", "Joseph Vang", "jvang12@r2hstudent.org", "Honeybacon121");
+
+	INSERT INTO users (roles, userNames, email, passwords)
+    VALUES
+    ("User", "John Doe", "johnD@gmail.com", "password123");
+
+-- ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
+-- GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
+
+ALTER USER 'juniorleon'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON destination.* TO 'juniorleon'@'localhost';

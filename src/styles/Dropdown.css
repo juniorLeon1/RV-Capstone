@@ -3,9 +3,11 @@
   list-style-type: none;
   margin: 0;
   padding: 10px;
-  border: 1px solid black;
   border-radius: 10px;
   width: 150px;
+  background-color: white;
+  border: 1px solid #120940;
+  box-shadow: 5px 5px 10px #120940
 }
 
 .drpdwn-menu-wrap.active {
