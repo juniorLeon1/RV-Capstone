@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/LoginForms.css"
+import "../../styles/LoginForms.css";
 
 const LoginForm = (props) => {
   const [email, setEmail] = useState("");
@@ -7,14 +7,30 @@ const LoginForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(email)
   };
 
   return (
     <div className="auth-form-container">
+
+      <div className="switch-auth">
+        <button
+          onClick={() => props.onFormSwitch("login")}
+          className={`switch-button ${
+            props.formValue === "login" ? "active-switch" : "inactive-switch"
+          }`}
+        >
+          Log In
+        </button>
+        <button
+          onClick={() => props.onFormSwitch("register")}
+          className="switch-button"
+        >
+          Sign Up
+        </button>
+      </div>
+
       <form className="login-form" onSubmit={handleSubmit}>
-        <label htmlFor="email" className="email-label">
-          Email:{" "}
-        </label>
         <input
           className="email-input"
           value={email}
@@ -22,13 +38,10 @@ const LoginForm = (props) => {
           type="email"
           id="email"
           name="email"
-          placeholder="youremail@email.com"
+          placeholder="Email Address"
           required
         />
 
-        <label htmlFor="password" className="password-label">
-          Password:{" "}
-        </label>
         <input
           className="password-input"
           value={pass}
@@ -36,17 +49,21 @@ const LoginForm = (props) => {
           type="password"
           id="password"
           name="password"
-          placeholder="****"
+          placeholder="Password"
           required
         />
-        <button type="submit" className="login-submit">Log In</button>
+
+        <button
+          onClick={() => props.onFormSwitch("forgot")}
+          className="forgot-button"
+        >
+          Forgot your password?
+        </button>
+
+        <button type="submit" className="submit-button">
+          Log In
+        </button>
       </form>
-      <button
-        onClick={() => props.onFormSwitch("register")}
-        className="register-switch-button"
-      >
-        Don't have an account? Register Here!
-      </button>
     </div>
   );
 };
