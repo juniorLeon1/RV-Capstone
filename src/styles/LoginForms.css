@@ -1,0 +1,37 @@
+.auth-form-container {
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label, .password-label, .name-label {
+    text-align: left;
+    padding: 0.25rem;
+    color: white;
+}
+
+.email-input, .password-input, .name-input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-submit, .register-submit, .register-switch-button, .login-switch-button {
+    border: none;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.register-switch-button, .login-switch-button {
+    text-decoration: underline;
+    background-color: transparent;
+    color: white;
+}
