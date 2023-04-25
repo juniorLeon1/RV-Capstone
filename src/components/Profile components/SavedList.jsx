@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Brazil() {
+const SavedList = (props) => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Brazil() {
   )
 }
 
-export default Brazil
+export default SavedList

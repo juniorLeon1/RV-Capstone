@@ -1,13 +1,12 @@
-import React from 'react'
-import LoggedIn from '../../components/Profile/LoggedIn'
+import React from "react";
+import AccountHero from "../../components/Profile components/AccountHero"
 
 const Profile = () => {
   return (
     <div>
-      <LoggedIn />
+      <AccountHero />
     </div>
-  )
-}
+  );
+};
 
-export default Profile
-
+export default Profile;

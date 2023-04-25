@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import LoginForm from "../../components/Login/LoginForm";
-import RegForm from "../../components/Login/RegForm";
+import LoginForm from "../../components/Login components/LoginForm";
+import RegForm from "../../components/Login components/RegForm";
+import ForgotPassForm from "../../components/Login components/ForgotPassForm";
 import "../../styles/Login.css";
-import ForgotPassForm from "../../components/Login/ForgotPassForm";
 
 const Login = () => {
   const [currentForm, setCurrentForm] = useState("login");
