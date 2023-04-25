@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import DestinationCards from "../../components/Destinations componets/Destination Cards";
+import DestinationCards from "../../components/Destinations components/Destination Cards";
 
 
 

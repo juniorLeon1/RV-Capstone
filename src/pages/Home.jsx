@@ -1,9 +1,8 @@
-import React from 'react'
-import Experience from '../components/Home componets/Experience'
-import Hero from '../components/Home componets/Hero'
-import Plan from '../components/Home componets/Plan'
-import CircleSmall from '../components/Home componets/CircleSmall'
-
+import React from "react";
+import Experience from "../components/Home components/Experience";
+import Hero from "../components/Home components/Hero";
+import Plan from "../components/Home components/Plan"
+import CircleSmall from "../components/Home components/CircleSmall";
 
 const Home = () => {
   return (
@@ -14,7 +13,7 @@ const Home = () => {
       <Plan />
       <h1>Home</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
