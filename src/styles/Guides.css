@@ -1,0 +1,15 @@
+.innertext {
+    border-radius: 30px;
+    border-color: black;
+}
+.puertoRico {
+    border: 20px solid black;
+    border-radius: 50%;
+    height: 352px;
+    width: 352px;
+}
+.mountain {
+    height: 157px;
+    width: 157px;
+    border-radius: 50%;
+}

@@ -1,12 +1,12 @@
 
 .Backdrop {
     background-color: #fbb25289;
-   /* max-width: 960px; */
    margin: 100px auto;
-   padding: 10px;
+   padding: 10px 80px;
    display: grid;
    grid-template-columns: 10% 10% 10% 10% 40%;
    grid-template-rows: auto 20% 40%;
+   height: 750px;
 
 }
 .Item {
