@@ -1,6 +1,7 @@
 -- create database avoTravelerDB;
 use avoTravelerDB;
 
+
 -- create table destination(
 -- id INT AUTO_INCREMENT PRIMARY KEY,
 -- location VARCHAR(25),
@@ -33,9 +34,9 @@ use avoTravelerDB;
 -- ("Admin", "Diana Capellan", "dcapellan12@r2hstudent.org", "AvoTrav$43"),
 -- ("Admin", "Joseph Vang", "jvang12@r2hstudent.org", "Honeybacon121");
 
-	INSERT INTO users (roles, userNames, email, passwords)
-    VALUES
-    ("User", "John Doe", "johnD@gmail.com", "password123");
+	-- INSERT INTO users (roles, userNames, email, passwords)
+--     VALUES
+--     ("User", "John Doe", "johnD@gmail.com", "password123");
 
 -- ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
 -- GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
