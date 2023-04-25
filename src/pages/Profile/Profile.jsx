@@ -1,10 +1,10 @@
 import React from "react";
-import LoggedIn from "../../components/Profile components/LoggedIn";
+import AccountHero from "../../components/Profile components/AccountHero"
 
 const Profile = () => {
   return (
     <div>
-      <LoggedIn />
+      <AccountHero />
     </div>
   );
 };
