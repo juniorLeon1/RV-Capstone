@@ -1,0 +1,30 @@
+.drpdwn-menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+  background-color: white;
+  border: 1px solid #120940;
+  box-shadow: 5px 5px 10px #120940
+}
+
+.drpdwn-menu-wrap.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+
+.drpdwn-menu-wrap:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drpdwn-menu-wrap.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20);
+  transition: 500ms ease;
+}
