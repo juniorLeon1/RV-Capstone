@@ -1,0 +1,68 @@
+.auth-form-container {
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  width: 20vw;
+}
+
+.switch-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.switch-button {
+  border: none;
+  border-bottom: 2px solid #120940;
+  border-radius: 0;
+  background-color: transparent;
+  color: #120940;
+  width: 100%;
+  padding: 16px;
+}
+
+.active-switch {
+  color: #fbb152;
+  border-bottom: 2px solid #fbb152;
+}
+
+.auth-form-container,
+.login-form,
+.register-form,
+.forgot-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input,
+.password-input,
+.name-input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #120940;
+  border-radius: 5px;
+}
+
+.forgot-button {
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    color: #120940;
+}
+
+.submit-button {
+  border: 1px solid #120940;
+  background-color: white;
+  padding: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #120940;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #fbb152;
+}

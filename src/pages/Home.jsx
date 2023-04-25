@@ -1,24 +1,22 @@
-import React from 'react'
-import Experience from '../components/Home/Experience'
-import Hero from '../components/Home/Hero'
-import Plan from '../components/Home/Plan'
-import CircleSmall from '../components/Home/CircleSmall'
-import Featured from '../components/Home/Featured'
-import Guides from '../components/Home/Guides'
-
+import React from "react";
+import Experience from "../components/Home components/Experience";
+import Hero from "../components/Home components/Hero";
+import Plan from "../components/Home components/Plan"
+import CircleSmall from "../components/Home components/CircleSmall";
+import Featured from "../components/Home components/Featured"
+import Guides from "../components/Home components/Guides"
 
 const Home = () => {
   return (
     <div>
-      {/* <Hero />
+      <Hero />
       <Experience />
       <CircleSmall />
       <Plan />
       <Featured />
       <Guides />
-      <h1>Home</h1> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
