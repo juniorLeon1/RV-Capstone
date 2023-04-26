@@ -25,3 +25,9 @@ margin: 50px;
         letter-spacing: 2px;
         margin: 30px;
 }
+
+.Plan-button:hover {
+    color: white;
+    border-color: #fbb152;
+    background-color: #fbb152;
+  }
