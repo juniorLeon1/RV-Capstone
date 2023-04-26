@@ -38,12 +38,12 @@ const PRico = () => {
         <section>
           <img src={require("../../images/RV_Brazil.jpeg")} alt='' className='side-img' />
           <h2 className='side-content-title'>Brazil</h2>
-          <p>Why designing for mobile devices first can help you create more effective and user-friendly websites.</p>
+          <p>The largest country in South America and the fifth largest nation in the world.</p>
         </section>
         <section>
           <img src={require("../../images/RV_London.jpeg")} alt='' className='side-img' />
           <h2 className='side-content-title'>London</h2>
-          <p>Examples and best practices for creating responsive navigation menus that work well on both desktop and mobile devices.</p>
+          <p>The capital city of the United Kingdom. The oldest of the world's great cities, with its history spanning nearly two millennia.</p>
         </section>
       </div>
 

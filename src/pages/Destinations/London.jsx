@@ -37,7 +37,7 @@ const London = () => {
         <section>
           <img src={require("../../images/RV_Brazil.jpeg")} alt='' className='side-img' />
           <h2 className='side-content-title'>Brazil</h2>
-          <p>Why designing for mobile devices first can help you create more effective and user-friendly websites.</p>
+          <p>The largest country in South America and the fifth largest nation in the world.</p>
         </section>
         <section>
           <img src={require("../../images/RV_Puerto_Rico.webp")} alt='' className='side-img' />
