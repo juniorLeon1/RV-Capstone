@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import "../../styles/Destinations.css"
 
 function DestinationCards() {
   const [info,setInfo] = useState([]);
@@ -21,23 +22,25 @@ function DestinationCards() {
   }
 
   return (
-    <div>
+    <div className='stucture'>
       {info.map((info)=>{
         return(
-          <div className="card" style={{ width: '18rem' }}>
-          <img src={require(info.img)} className="card-img-top" alt={info.location} />
-      <div className="card-body">
-        <h5 className="card-title">{info.location}</h5>
-      </div>
-      <ul className="list-group list-group-light list-group-small">
-        <li className="list-group-item px-4">Cras justo odio</li>
-        <li className="list-group-item px-4">Dapibus ac facilisis in</li>
-        <li className="list-group-item px-4">Vestibulum at eros</li>
-      </ul>
-      <div className="card-body">
-        <Link><a href="#" className="card-link">Card link</a></Link>
-      </div>
-      </div>
+          <div key= {info.id} className="desti-card" style={{ width: '18rem' }}>
+
+          <div>
+          <img src={info.img} className="desti-image" alt={info.location} />
+          </div>
+          
+          <div>
+          <div className="">
+          <h5 className="">{info.location}</h5>
+          </div>
+
+          <div className="">
+          <Link to={info.pathing}><p>{info.location}</p></Link>
+          </div>
+          </div>
+          </div>
         );
       })}
       

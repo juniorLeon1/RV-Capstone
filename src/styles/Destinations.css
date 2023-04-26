@@ -1,0 +1,9 @@
+.stucture{
+        /* max-width: 25%;
+        max-height: 10%; */
+}
+
+.desti-card{
+    display: flex;
+    width: 80%;
+}
