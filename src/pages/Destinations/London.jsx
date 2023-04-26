@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../styles/London.css"
 
 const London = () => {
   return (
@@ -42,7 +43,7 @@ const London = () => {
         <section>
           <img src={require("../../images/RV_Puerto_Rico.webp")} alt='' className='side-img' />
           <h2 className='side-content-title'>Puerto Rico</h2>
-          <p>How to use media queries and breakpoints in your CSS to create responsive designs that adapt to different screen sizes.</p>
+          <p>An archipelago in the Caribbean Sea consisting of the main island, four small islands, and hundreds of cays and islets.</p>
         </section>
       </div>
 
