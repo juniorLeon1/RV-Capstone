@@ -28,7 +28,7 @@ export default function CircleSmall() {
     variants={circleVariant}
     initial="hidden"
     animate={control} className='circle'>
-     <img src={Yellow}></img>
+     <img src={Yellow} alt='small orange circle'></img>
     </motion.div>
   )
 }
