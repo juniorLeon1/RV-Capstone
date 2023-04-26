@@ -89,17 +89,17 @@ function Footer() {
               <h6 className='text-primary fw-bold mb-4'>CONTACT</h6>
               <p className="text-dark">
                 <MDBIcon color='dark' icon='home' className='me-2' />
-                New York, NY 10012, US
+                1101 Red Ventures Dr, Fort Mill, SC 29707
               </p>
               <p className="text-dark">
                 <MDBIcon color='dark' icon='envelope' className='me-3' />
-                RV@redventures.com
+                avotravels@redventures.com
               </p>
               <p className="text-dark">
-                <MDBIcon color='dark' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='dark' icon='phone' className='me-3' /> +1 704 409 3362
               </p>
               <p className="text-dark">
-                <MDBIcon color='dark' icon='print' className='me-3' /> + 01 234 567 89
+                <MDBIcon color='dark' icon='print' className='me-3' /> +1 980 326 8934
               </p>
             </MDBCol>
           </MDBRow>

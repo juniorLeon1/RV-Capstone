@@ -1,12 +1,22 @@
 import React from 'react'
-import "../../styles/Charlotte.css"
 
 const Charlotte = () => {
   return (
     <div className="App">
-    <header className="App-header">
-      <h1>Charlotte</h1>
-    </header>
+        <header style={{ paddingLeft: 0 }}>
+        <div
+          className='p-5 text-center bg-image'
+          style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: 600 }}
+        >
+          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+            <div className='d-flex justify-content-center align-items-center h-100'>
+              <div className='text-white'>
+                <h1 className='display-3 fw-bold'>Charlotte</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     <div className="container">
       <div className="main-content">
         <section className='main-content-title'>
@@ -28,23 +38,22 @@ const Charlotte = () => {
           <p>Provides educational programs and resources at the County’s oldest and largest nature preserve. </p>
         </section>
       </div>
+
       <div className="side-content">
         <section>
           <img src={require("../../images/RV_Brazil.jpeg")} alt='' className='side-img' />
           <h2 className='side-content-title'>Brazil</h2>
-          <p>Why designing for mobile devices first can help you create more effective and user-friendly websites.</p>
         </section>
         <section>
           <img src={require("../../images/RV_Puerto_Rico.webp")} alt='' className='side-img' />
           <h2 className='side-content-title'>Puerto Rico</h2>
-          <p>How to use media queries and breakpoints in your CSS to create responsive designs that adapt to different screen sizes.</p>
         </section>
         <section>
           <img src={require("../../images/RV_London.jpeg")} alt='' className='side-img' />
           <h2 className='side-content-title'>London</h2>
-          <p>Examples and best practices for creating responsive navigation menus that work well on both desktop and mobile devices.</p>
         </section>
       </div>
+
       <div className="small-content">
         <section className='small-content-title'>
           <h2>Eco-Friendly Resturants</h2>
