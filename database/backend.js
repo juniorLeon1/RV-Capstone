@@ -43,21 +43,21 @@ app.get("/users", (req, res) => {
     });
 });
 
-// app.post("/", (req, res) => {
-//     const q = "INSERT INTO products(`title`, `descrp`, `price`, `image`) VALUES (?)";
+app.post("/users", (req, res) => {
+    const q = "INSERT INTO products(`roles`, `userName`, `email`, `passwords`) VALUES (?)";
 
-//     const values = [
-//         req.body.title,
-//         req.body.price,
-//         req.body.descrp,
-//         req.body.image,
-//     ];
+    const values = [
+        req.body.roles = "User",
+        req.body.userName,
+        req.body.email,
+        req.body.passwords,
+    ];
 
-//     db.query(q, [values], (err, data) => {
-//         if (err) return res.send(err);
-//         return res.json(data);
-//     });
-// });
+    db.query(q, [values], (err, data) => {
+        if (err) return res.send(err);
+        return res.json(data);
+    });
+});
 
 app.listen(8800, () => {
     console.log("Connected to backend. on port 8800");
