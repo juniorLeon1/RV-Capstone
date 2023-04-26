@@ -24,6 +24,7 @@
 
 .navigation-item {
     padding: 0 20px;
+    margin: 0;
 }
 
 .navigation-link {
@@ -47,4 +48,10 @@
 .drpdwn-arrow.inactive {
     transform: rotate(90deg);
     transition: 500ms ease;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-container {
+        display: none;
+    }
 }
