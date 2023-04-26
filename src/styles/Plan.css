@@ -4,15 +4,16 @@
     border-radius: 50%;
 }
 .HomeContainer {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
+    display: inline-grid;
+/* grid-template-columns: repeat(2, 1fr);
 column-gap: 50px;
-margin: 50px;
+margin: 50px; */
 }
 
-/* .Grid-item img {
-    max-width: 60%;
-} */
+.Grid-item {
+    display:flex;
+    flex-direction: column;
+}
 
 .Plan-button {
         border-style: solid;
