@@ -1,0 +1,20 @@
+.small-content {
+    flex-basis: 70%;
+  }
+  /* .small-content-title h2{
+    font-size: 300%;
+  } */
+  .food-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  .img {
+    width: 50vh;
+  }
+  
+  .food-content {
+    padding: 20px;
+  }
