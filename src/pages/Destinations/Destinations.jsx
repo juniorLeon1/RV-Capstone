@@ -6,15 +6,8 @@ import DestinationCards from "../../components/Destinations components/Destinati
 
 const Destinations = () => {
   return (
-    <div>
-      <Link to="/destinations/charlotte"><p>Charlotte</p></Link>
-      <Link to="/destinations/puerto-rico"><p>Puerto Rico</p></Link>
-      <Link to="/destinations/london"><p>London</p></Link>
-      <Link to="/destinations/brazil"><p>Brazil</p></Link>
-
-      <div>
+    <div> 
       <DestinationCards/>
-      </div>
     </div>
 
   );

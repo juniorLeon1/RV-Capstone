@@ -39,8 +39,8 @@ export default function Experience() {
         </p>
       </div>
       <div className="expContainer">
-        <motion.div
-          ref={ref}
+      <motion.div
+      ref={ref}
           variants={boxVariant}
           initial="hidden"
           animate={control}
@@ -60,7 +60,8 @@ export default function Experience() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </motion.div>
+          </motion.div>
+        
 
         <motion.div
           ref={ref}
