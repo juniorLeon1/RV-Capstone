@@ -8,7 +8,7 @@ const Dropdown = (props) => {
       <ul className="drpdwn-menu">
         {props.menu.map((element) => {
           return (
-            <Link to={element.url}>
+            <Link to={element.url} key={element.item}>
               <li key={element.item} className="drpdwn-item">{element.item}</li>
             </Link>
           );
