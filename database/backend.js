@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
 const db = mysql.createConnection({
     host: "127.0.0.1",
     user: 'root',
@@ -43,18 +44,30 @@ app.get("/users", (req, res) => {
     });
 });
 
-app.post("/users", (req, res) => {
-    const q = "INSERT INTO products(`roles`, `userName`, `email`, `passwords`) VALUES (?)";
-
+app.post("/users",(req, res) => {
+    console.log("posting works here")
+    const q = `INSERT INTO users (roles, userNames, email, passwords) VALUES (?,?,?,?)`;
     const values = [
-        req.body.roles = "User",
-        req.body.userName,
+        req.body.roles,
+        req.body.userNames,
         req.body.email,
         req.body.passwords,
     ];
 
-    db.query(q, [values], (err, data) => {
-        if (err) return res.send(err);
+    console.log(values);
+
+    // db.query(q, values, (err, data) => {
+    //     if (err){
+    //         return res.send(err);
+    //     }
+    //     console.log("query working?")
+    //     return res.json(data);
+    // });
+    db.query(q, values, (err, data) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send("An error occurred while adding the user to the database.");
+        }
         return res.json(data);
     });
 });
