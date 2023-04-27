@@ -1,15 +1,80 @@
-.flex-wrapper{
+/* .flex-wrapper{
        display: flex;
        flex-direction: column;
        background-color: rgb(255, 140, 0);
-}
-.desti-card {
+} */
+/* .structure {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .flex-card {
     display: flex;
     flex-direction: row;
+    margin-top: 150px;
+    text-align: right;
+    border: 20px;
+   background-color: black;
    
     
+} */
+/* .flex-card-img {
+    /* margin: 50px; 
+    border-radius: 50%;
+    height: 300px;
+    width: 400px;
+    
+} 
+.flex-test {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+   
 }
-.desti-image{
-    width: 300px;
-    height: 200px;
+.some {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
 }
+
+.h5tag {
+    padding-top: 78px;
+} */
+
+.DestinationContainer {
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-bottom: 300px;
+    }
+
+    .item {
+        background-color: rgb(205, 214, 221);
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 40px;
+    }
+    
+    .title {
+        text-align: center;
+        padding: 30px;
+    }
+    .item:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
+    }
+    
+    .item h5 {
+        padding: 20px;
+    }
+    
+    .item img {
+        width: 200px;
+        height: 200px;
+    }
