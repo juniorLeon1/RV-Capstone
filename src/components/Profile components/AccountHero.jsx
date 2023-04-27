@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/LoggedIn.css";
+import "../../styles/AccountHero.css";
+import UserIcon from "./UserIcon"
 
 const LoggedIn = () => {
   const [data, setData] = useState([]);
@@ -20,12 +21,10 @@ const LoggedIn = () => {
     <div>
       <div className="header-background">
         <div className="left-info">
-          <div className="profile-icon">
-            <h1 className="name-initial">J</h1>
-          </div>
+          <UserIcon />
           <div className="user-info">
             <h1 className="full-name">John Doe</h1>
-            <p className="this-email">johnD@gmail.com</p>
+            <p className="user-email">johnD@gmail.com</p>
           </div>
         </div>
       </div>

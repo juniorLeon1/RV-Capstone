@@ -42,8 +42,8 @@ use avoTravelerDB;
 
 select * from users;
 
-ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
+-- ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
+-- GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
 
--- ALTER USER 'juniorleon'@'localhost' IDENTIFIED BY 'password';
--- GRANT ALL PRIVILEGES ON destination.* TO 'juniorleon'@'localhost';
+ALTER USER 'juniorleon'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON destination.* TO 'juniorleon'@'localhost';
