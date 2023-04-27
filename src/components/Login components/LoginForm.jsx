@@ -1,14 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/LoginForms.css";
 
 const LoginForm = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8800/users");
+        const data = await response.json();
+        setData(data);
+      } catch (err) {
+        console.error("Error fetching data:", err);
+      }
+    };
+    fetchData();
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email);
+    console.log(email, pass);
   };
+
+  const loginHandler = () => {
+//hit the database and query by user email and compare pass 
+//props.setIsLoggedIn(true/false)
+//props.setRole(role)
+  } 
 
   return (
     <div className="auth-form-container">
@@ -59,7 +79,7 @@ const LoginForm = (props) => {
           Forgot your password?
         </button>
 
-        <button type="submit" className="submit-button">
+        <button type="submit" className="submit-button" onClick={loginHandler}>
           Log In
         </button>
       </form>

@@ -17,21 +17,6 @@
     padding: 0 0 50px 50px;
 }
 
-.profile-icon {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: #fbb152;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.name-initial {
-    margin: 0;
-}
-
 .user-info {
     color: white;
     padding: 10px;
@@ -40,6 +25,6 @@
 }
 
 .full-name,
-.this-email {
+.user-email {
     margin: 0;
 }

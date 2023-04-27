@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -11,12 +12,15 @@ import London from "./pages/Destinations/London"
 import PRico from "./pages/Destinations/PRico"
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [role, setRole] = useState("");
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout isLoggedIn={isLoggedIn} />}>
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
+          <Route path="login" element={<Login setIsLoggedIn={setIsLoggedIn} setRole={setRole} />} />
           <Route path="profile" element={<Profile />} />
           <Route path="destinations" element={<Destinations />} />
           <Route path="destinations/charlotte" element={<Charlotte />} />

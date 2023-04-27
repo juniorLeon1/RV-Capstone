@@ -1,0 +1,14 @@
+.profile-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fbb152;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-initial {
+    margin: 0;
+}
