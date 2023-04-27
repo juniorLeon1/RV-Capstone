@@ -4,7 +4,7 @@ import RegForm from "../../components/Login components/RegForm";
 import ForgotPassForm from "../../components/Login components/ForgotPassForm";
 import "../../styles/Login.css";
 
-const Login = (setIsLoggedIn, setRole) => {
+const Login = ({ setIsLoggedIn, setRole }) => {
   const [currentForm, setCurrentForm] = useState("login");
 
   const toggleForm = (formName) => {

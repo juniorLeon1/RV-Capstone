@@ -68,7 +68,7 @@ const RegForm = (props) => {
           className="password-input"
           value={passwords}
           onChange={(event) => setPasswords(event.target.value)}
-          type="passwords"
+          type="password"
           id="passwords"
           name="passwords"
           placeholder="passwords"

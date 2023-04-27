@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/LoginForms.css";
 
 const LoginForm = (props) => {
-  const [email, setEmail] = useState("");
+  const [emailInput, setEmailInput] = useState("");
   const [pass, setPass] = useState("");
 
   const [data, setData] = useState([]);
@@ -21,14 +21,24 @@ const LoginForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email, pass);
   };
 
   const loginHandler = () => {
-//hit the database and query by user email and compare pass 
-//props.setIsLoggedIn(true/false)
-//props.setRole(role)
-  } 
+    const findUser = data.filter((data) => {
+      if (emailInput === data.email && pass === data.passwords) {
+        return data.email === emailInput;
+      }
+    });
+    console.log(findUser[0]);
+
+    if (!emailInput || !pass) {
+      alert("You must put a valid email and password");
+      return;
+    } 
+    // else {
+    //   props.setIsLoggedIn(true);
+    // }
+  };
 
   return (
     <div className="auth-form-container">
@@ -52,8 +62,8 @@ const LoginForm = (props) => {
       <form className="login-form" onSubmit={handleSubmit}>
         <input
           className="email-input"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          value={emailInput}
+          onChange={(event) => setEmailInput(event.target.value)}
           type="email"
           id="email"
           name="email"

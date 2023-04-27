@@ -18,15 +18,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout isLoggedIn={isLoggedIn} />}>
+        <Route path="/" element={<Layout setIsLoggedIn={setIsLoggedIn} />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login setIsLoggedIn={setIsLoggedIn} setRole={setRole} />} />
-          <Route path="profile" element={<Profile />} />
+          <Route path="profile" element={<Profile setIsLoggedIn={setIsLoggedIn} setRole={setRole} />} />
           <Route path="destinations" element={<Destinations />} />
-          <Route path="destinations/charlotte" element={<Charlotte />} />
-          <Route path="destinations/brazil" element={<Brazil />} />
-          <Route path="destinations/london" element={<London />} />
-          <Route path="destinations/puerto-rico" element={<PRico />} />
+          <Route path="destinations/charlotte" element={<Charlotte setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="destinations/brazil" element={<Brazil setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="destinations/london" element={<London setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="destinations/puerto-rico" element={<PRico setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
