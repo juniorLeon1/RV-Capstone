@@ -1,46 +1,13 @@
 import React from 'react'
-import DestHero from '../../components/Destinations components/DestHero';
 import PlacesCard from '../../components/Destinations components/PlacesCard';
 import RestPlaces from '../../components/Destinations components/RestPlaces';
 import SideBar from '../../components/Destinations components/SideBar';
+import LocationsArray from '../../components/Destinations components/LocationsArray';
 import '../../styles/Destcontain.css';
 
 const PRico = () => {
-  const placesArray = [
-    {
-      img: require("../../images/RV_El_Yunque.jpeg"),
-      title: "El Yunque National Forest",
-      desc: "El Yunque National Forest is a tropical rainforest in northeastern Puerto Rico. From El Portal Visitor Center, a walkway winds through the surrounding treetops."
-    },
-    {
-      img: require("../../images/RV_Mosquito_Bay.jpeg"),
-      title: "Mosquito Bay (Bahía Bioluminiscente)",
-      desc: "Microscopic organisms light up blue when agitated at this famed bioluminescent bay."
-    },
-    {
-      img: require("../../images/RV_Tanama.jpeg"),
-      title: "Tanama Eco-Adventure",
-      desc: "Activities which includes caves, giant natural tunnels, tappelling, hiking, canyoning, trekking, body rafting, kayak ,camping , team buildings and many more."
-    },
-  ];
-
-  const restArray = [
-    {
-      img: require("../../images/RV_Green_Bite.jpeg"),
-      title: "Green Bites",
-      desc: "A healthy food restaurant serving coffee and vegan brunch."
-    },
-    {
-      img: require("../../images/RV_Parrot.jpeg"),
-      title: "Green Parrot",
-      desc: "Casual, family restaurant. Offers menu for adults, children, Puerto Rican food, and vegetarian options."
-    },
-    {
-      img: require("../../images/RV_treehouse.jpeg"),
-      title: "El Yunque Treehouse",
-      desc: "Serving Caribbean and Puerto Rican for everyone and Vegetarian Friendly."
-    },
-  ];
+  const pRicoPlaces = LocationsArray[3].PR.places;
+  const pRicoRest = LocationsArray[3].PR.rest;
 
   const side = [
     {
@@ -58,18 +25,46 @@ const PRico = () => {
   ];
 
   return (
-    <div className='App'>
-      <DestHero title={"Puerto Rico"} />
-        <section className='container'>
-          <h2>Eco-Friendly Places</h2>
-          <PlacesCard places={placesArray} />
-          <h2>Eco-Friendly Resturants</h2>
-          <RestPlaces rest={restArray} />
-        <section >
-          <SideBar className='side-content' info={side} />
+    <section className="App">
+       <div>
+        <header style={{ paddingLeft: 0 }}>
+          <div
+            className='p-5 text-center bg-image'
+            style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/Cities-in-Puerto-Rico.jpg')", height: 600 }}
+          >
+            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <div className='text-white'>
+                  <h1 className='display-3 fw-bold'>Puerto Rico</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+        <section className='container'> 
+          <section className='place-container'>
+            <h1>Eco-Friendly Places</h1>
+            <PlacesCard value={pRicoPlaces}/>
+          </section>
+
+          <section>
+            <SideBar info={side}/>
+          </section>
+          {/* <h2>Eco-Friendly Resturants</h2>
+          <RestPlaces value={pRicoRest} /> */}
+          {/* <section>
+            <SideBar info={side}/>
+          </section> */}
+          
         </section>
+
+        <section className='rest-container'>
+          <h1>Eco-Friendly Resturants</h1>
+          <RestPlaces value={pRicoRest} />
         </section>
-    </div>
+
+    </section>
   )
 }
 

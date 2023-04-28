@@ -1,26 +1,28 @@
 import React from 'react'
 import "../../styles/Restplaces.css"
+import SaveButton from './SaveButton'
 
 const RestPlaces = (props) => {
   return (
-    <div>
-      {props.rest.map((info) => {
-        return (
         <div>
-            <section className='small-content'>
-                  <section className='food-container'>
-                    <img src={info.img} alt={info.title} className='img' />
-                    <section className='food-content'>
-                      <h2>{info.title}</h2>
-                      <p className=''>{info.desc}</p>
-                    </section>
-                  </section>
-            </section>
+          {props.value.map(rest => {
+            return (
+              <div>
+              <div className='small-content' /> 
+                <div className='food-container'>
+                  <img src={rest.img} alt={rest.title} className='img'/>
+                    <div className='food-content'>
+                      <h2>{rest.title}</h2>
+                      <p>{rest.desc}</p>
+                      <SaveButton />
+                    </div>
+                </div>
+                </div>
+              
+            )
+          })}
         </div>
-        );
-      })}
-    </div>
-  );
-};
+      )
+    }
 
 export default RestPlaces;

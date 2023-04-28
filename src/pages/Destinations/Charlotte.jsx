@@ -1,95 +1,66 @@
 import React from 'react'
+import PlacesCard from '../../components/Destinations components/PlacesCard';
+import RestPlaces from '../../components/Destinations components/RestPlaces';
+import SideBar from '../../components/Destinations components/SideBar';
+import LocationsArray from '../../components/Destinations components/LocationsArray';
+import '../../styles/Destcontain.css';
 
 const Charlotte = () => {
+  const cltPlaces = LocationsArray[1].Charlotte.places;
+  const cltRest = LocationsArray[1].Charlotte.rest;
+
+  const side = [
+    {
+      img: require("../../images/RV_Brazil.jpeg"),
+      title: "Brazil"
+    },
+    {
+      img: require("../../images/RV_Puerto_Rico.webp"),
+      title: "Puerto Rico"
+    },
+    {
+      img: require("../../images/RV_London.jpeg"),
+      title: "London"
+    },
+  ];
+
   return (
-    <div className="App">
+    <section className="App">
+      <div>
         <header style={{ paddingLeft: 0 }}>
-        <div
-          className='p-5 text-center bg-image'
-          style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: 600 }}
-        >
-          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-            <div className='d-flex justify-content-center align-items-center h-100'>
-              <div className='text-white'>
-                <h1 className='display-3 fw-bold'>Charlotte</h1>
+          <div
+            className='p-5 text-center bg-image'
+            style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/Downtown-Charlotte-North-Carolina.jpg')", height: 600 }}
+          >
+            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <div className='text-white'>
+                  <h1 className='display-3 fw-bold'>Charlotte</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-    <div className="container">
-      <div className="main-content">
-        <section className='main-content-title'>
+        </header>
+      </div>
+      <section className='container'>
+
+        <section className='place-container'>
           <h2>Eco-Friendly Places</h2>
+          <PlacesCard value={cltPlaces}/>
         </section>
-        <section>
-          <img src={require("../../images/RV_Freedom_Park.png")} alt='' className='img' />
-          <h2>Freedom Park</h2>
-          <p>Freedom Park is a 98-acre park in Charlotte, North Carolina. The park has paved trails, tennis/volleyball courts, sport/athletic fields and playground equipment.</p>
-        </section>
-        <section>
-          <img src={require("../../images/RV_Wing_Haven.jpeg")} alt='' className='img' />
-          <h2>Wing Haven</h2>
-          <p>A respite for birds and other wildlife and a welcoming place to discover the beauty and wonders of nature.</p>
-        </section>
-        <section>
-          <img src={require("../../images/RV_McDowell.webp")} alt='' className='img' />
-          <h2>McDowell Nature Center and Preserve</h2>
-          <p>Provides educational programs and resources at the County’s oldest and largest nature preserve. </p>
-        </section>
-      </div>
 
-      <div className="side-content">
         <section>
-          <img src={require("../../images/RV_Brazil.jpeg")} alt='' className='side-img' />
-          <h2 className='side-content-title'>Brazil</h2>
+          <SideBar className='side-content' info={side}/>
         </section>
-        <section>
-          <img src={require("../../images/RV_Puerto_Rico.webp")} alt='' className='side-img' />
-          <h2 className='side-content-title'>Puerto Rico</h2>
-        </section>
-        <section>
-          <img src={require("../../images/RV_London.jpeg")} alt='' className='side-img' />
-          <h2 className='side-content-title'>London</h2>
-        </section>
-      </div>
+      
+      </section>
 
-      <div className="small-content">
-        <section className='small-content-title'>
+        <section className='rest-container'>
           <h2>Eco-Friendly Resturants</h2>
+          <RestPlaces value={cltRest} />
         </section>
-        {/* <section>
-          <h2>Related Posts</h2>
-          <ul>
-            <li><a href="#">10 Best Responsive Design Examples</a></li>
-            <li><a href="#">Why Responsive Design is Essential for SEO</a></li>
-            <li><a href="#">Responsive Design Tools and Resources</a></li>
-          </ul>
-        </section> */}
-        <section className='food-container'>
-          <img src={require("../../images/RV_Flower_Child.jpeg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>Flower Child</h2>
-            <p>On a simple, soul-satisfying mission to serve positively delicious vibes to the Charlotte community. Chock full of nourishing goodness our made-from-scratch menu caters to all lifestyles from vegetarian and vegan, to meat-eating and gluten-free to keto and paleo.</p>
-          </section>
-        </section>
-        <section className='food-container'>
-          <img src={require("../../images/RV_Living_Kitchen.jpeg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>Living Kitchen</h2>
-            <p>Living Kitchen is your local hot spot for organic plant-based cuisine. Our vegan food creations are enjoyed by everyone!</p>
-          </section>
-        </section>
-        <section className='food-container'>
-          <img src={require("../../images/RV_Bean_Vegan.jpg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>Bean Vegan Cuisine</h2>
-            <p>100% vegan comfort foods! From burgers to breakfast, BBQ to buffalo fingers, and everything in between, our menu offers the kind of variety vegans in the area crave. We create fantastic flavors that vegans and non-vegans alike will love. Come on in and experience it for yourself. It’s good y’all!</p>
-          </section>
-        </section>
-      </div>
-    </div>
-  </div>
+        
+    </section>
   )
 }
 

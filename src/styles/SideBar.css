@@ -1,7 +1,17 @@
+.side-content {
+  /* display: flex;
+  flex-direction: column; */
+  flex-basis: 20%;
+  padding-right: 60px;
+  font-size: 80%;
+
+}
 /* .side-content {
   flex-basis: 20%;
   padding-right: 50px;
   font-size: 80%;
+  box-sizing: border-box;
+
 } */
 .side-content-title{
   font-size: 200%;
@@ -9,4 +19,5 @@
 .side-img {
   width: 25vh;
   height: 15vh;
+  border-radius: 5%;
 }

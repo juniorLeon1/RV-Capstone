@@ -6,7 +6,7 @@ const SideBar = (props) => {
     <div>
       {props.info.map((info) => {
         return (
-            <section>
+            <section className='side-content'>
                 <img src={info.img} alt={info.title} className='side-img' />
                 <h2 className='side-content-title'>{info.title}</h2>
             </section>
