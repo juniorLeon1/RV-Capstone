@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import "../../styles/LoginForms.css";
+import axios from "axios";
 
 const RegForm = (props) => {
   const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  const [name, setName] = useState("");
+  const [passwords, setPasswords] = useState("");
+  const [userNames, setUserNames] = useState("");
+  const roles = "User";
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email)
+    let data = {roles,userNames,email, passwords};
+    postIntoData(data);
+    console.log(data);
+  };
+
+  const postIntoData = async (data) =>{
+    try{
+      const res = await axios.post("http://localhost:8800/users", data);
+      console.log("working in postIntoData")
+      return res;
+    }catch{
+      console.log("might be broken")
+    }
   };
 
   return (
@@ -31,8 +45,8 @@ const RegForm = (props) => {
       <form className="register-form" onSubmit={handleSubmit}>
         <input
           className="name-input"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={userNames}
+          onChange={(event) => setUserNames(event.target.value)}
           id="name"
           name="name"
           placeholder="Your name"
@@ -52,12 +66,12 @@ const RegForm = (props) => {
 
         <input
           className="password-input"
-          value={pass}
-          onChange={(event) => setPass(event.target.value)}
+          value={passwords}
+          onChange={(event) => setPasswords(event.target.value)}
           type="password"
-          id="password"
-          name="password"
-          placeholder="Password"
+          id="passwords"
+          name="passwords"
+          placeholder="passwords"
           required
         />
 
