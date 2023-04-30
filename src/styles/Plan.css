@@ -1,5 +1,9 @@
+* {
+  overflow-x: visible ;
+}
+
 .outter {
-    height: 600px;
+    height: 550px;
 }
 
 .HomeContainer img {
@@ -11,6 +15,7 @@
 display: flex;
 flex-direction: row;
 margin: 50px; 
+
 }
 
  .Grid-item {
@@ -57,7 +62,6 @@ margin: 50px;
         max-height: 100%;
         margin-top: 20px;
         margin-left: -40px;
-        overflow-x: visible;
         
     }
     .Plan-button {
