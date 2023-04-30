@@ -26,8 +26,8 @@ function DestinationCards() {
       {info.map((info) => (
         <div className="item" key={info.id}>
           {info.img && <img src={info.img} alt={info.location} />}
-          <h5>{info.location}</h5>
-          <Link to={info.pathing}>go here</Link>
+          <h1>{info.location}</h1>
+          <Link className="Button" to={info.pathing}>go here</Link>
         </div>
       ))}
     </div>
