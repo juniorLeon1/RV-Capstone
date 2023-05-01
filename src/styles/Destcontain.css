@@ -14,8 +14,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; 
-    margin-top: 50px; 
+    /* margin-top: 50px;  */
     text-align: center;
+    padding: 50px;
+
   }
 
   .place-container{
@@ -29,6 +31,7 @@
     flex-basis: 20%;
     padding-right: 50px;
     font-size: 80%;
+
   }
 
 .rest-container{

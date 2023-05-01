@@ -28,9 +28,8 @@ const Charlotte = () => {
   ];
 
   return (
-    <section className="App">
-      <div>
-        <header style={{ paddingLeft: 0 }}>
+    <div>
+        <header style={{ paddingLeft: 0 , position: 'relative', zIndex: -1 }}>
           <div
             className='p-5 text-center bg-image'
             style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/Downtown-Charlotte-North-Carolina.jpg')", height: 600 }}
@@ -44,7 +43,9 @@ const Charlotte = () => {
             </div>
           </div>
         </header>
-      </div>
+      
+    <section className="App">
+      
       <section className='container'>
 
         <section className='place-container'>
@@ -64,6 +65,7 @@ const Charlotte = () => {
         </section>
         
     </section>
+    </div>
   )
 }
 
