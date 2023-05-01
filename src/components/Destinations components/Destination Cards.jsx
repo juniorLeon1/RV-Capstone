@@ -27,7 +27,7 @@ function DestinationCards() {
         <div className="item" key={info.id}>
           {info.img && <img src={info.img} alt={info.location} />}
           <h1>{info.location}</h1>
-          <Link className="Button" to={info.pathing}>go here</Link>
+          <Link className="Button" to={info.pathing}>More Info</Link>
         </div>
       ))}
     </div>
