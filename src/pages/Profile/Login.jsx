@@ -4,7 +4,7 @@ import RegForm from "../../components/Login components/RegForm";
 import ForgotPassForm from "../../components/Login components/ForgotPassForm";
 import "../../styles/Login.css";
 
-const Login = ({ setIsLoggedIn, setRole }) => {
+const Login = () => {
   const [currentForm, setCurrentForm] = useState("login");
 
   const toggleForm = (formName) => {
@@ -13,7 +13,7 @@ const Login = ({ setIsLoggedIn, setRole }) => {
 
   const renderForms = () => {
     if (currentForm === "login") {
-      return <LoginForm onFormSwitch={toggleForm} formValue={currentForm} setIsLoggedIn={setIsLoggedIn} setRole={setRole} />;
+      return <LoginForm onFormSwitch={toggleForm} formValue={currentForm} />;
     } else if (currentForm === "register") {
       return <RegForm onFormSwitch={toggleForm} formValue={currentForm} />;
     } else if (currentForm === "forgot") {
@@ -23,11 +23,7 @@ const Login = ({ setIsLoggedIn, setRole }) => {
     }
   };
 
-  return (
-    <div className="auth-container">
-      {renderForms()}
-    </div>
-  );
+  return <div className="auth-container">{renderForms()}</div>;
 };
 
 export default Login;

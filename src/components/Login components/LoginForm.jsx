@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "../../styles/LoginForms.css";
+import { ProfileContext } from "../../context/profile-context";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = (props) => {
   const [emailInput, setEmailInput] = useState("");
   const [pass, setPass] = useState("");
+  const { setLoggedIn, setRole, setUserInfo } = useContext(ProfileContext);
+  const navigate = useNavigate()
 
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -28,25 +32,27 @@ const LoginForm = (props) => {
       if (emailInput === data.email) {
         return data.email === emailInput;
       }
+      return false;
     });
-    try{
-      if(findUser[0] === undefined){
-        throw new Error("Email is not found")
-      }
 
-      if(findUser[0].passwords !== pass){
-        return alert("Incorrect Password!")
-      }else{
-        return (props.setLoggedIn(true),
-          props.setRole(findUser[0].roles)
-          
-        )
+    try {
+      if (!emailInput || !pass) {
+        throw new Error("Please input an email and password");
+      } else if (findUser[0] === undefined) {
+        throw new Error("Invalid email");
+      } else if (findUser[0].passwords !== pass) {
+        throw new Error("Incorrect Password");
+      } else {
+        setLoggedIn(true);
+        setRole(findUser[0].roles);
+        setUserInfo(findUser[0]);
+        navigate("/profile");
       }
-    }catch(error){
-      return alert(`${error.message}`)
+    } catch (error) {
+      return alert(`${error.message}`);
     }
   };
-
+  
   return (
     <div className="auth-form-container">
       <div className="switch-auth">
@@ -96,7 +102,11 @@ const LoginForm = (props) => {
           Forgot your password?
         </button>
 
-        <button type="submit" className="submit-button" onClick={loginHandler}>
+        <button
+          type="submit"
+          className="submit-button"
+          onClick={() => loginHandler()}
+        >
           Log In
         </button>
       </form>
