@@ -1,0 +1,30 @@
+.saved-list-body {
+  width: 80vw;
+  margin: auto;
+}
+
+.saved-list-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.all-list-box {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.all-img {
+  height: 40px;
+  width: 40px;
+}
