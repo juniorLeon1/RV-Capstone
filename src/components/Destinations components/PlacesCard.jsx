@@ -8,7 +8,7 @@ const PlacesCard = (props) => {
       {props.value.map(place => {
         return (
           <div className='main-content'>
-            <img src={place.img} alt={place.title} className='img'/>
+            <img src={place.img} alt={place.title} className='img' alt={place.title} />
             <h2 className='main-content-title'>{place.title}</h2>
             <p>{place.desc}</p>
             <Savemebtn />

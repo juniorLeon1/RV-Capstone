@@ -1,16 +1,18 @@
 .App {
     text-align: center;
     background-color: #fbb152;
+    padding-bottom: 5%;
 }
   
-  
+ 
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; 
-    margin-top: 50px; 
+    /* margin-top: 50px;  */
     text-align: center;
+    padding: 50px;
   }
 
   .place-container{
@@ -28,7 +30,6 @@
   padding: 0 50px;
   margin-top: 50px; 
   text-align: center;
-  padding-bottom: 5%;
 }
 
  section {

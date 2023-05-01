@@ -9,7 +9,7 @@ const SideBar = (props) => {
         return (
           <Link to={info.url} >
             <section className='side-content'>
-                <img src={info.img} alt={info.title} className='side-img' />
+                <img src={info.img} alt={info.title} className='side-img' alt={info.title}/>
                 <h2 className='side-content-title'>{info.title}</h2>
             </section>
           </Link>

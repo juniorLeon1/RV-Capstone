@@ -10,7 +10,7 @@ const RestPlaces = (props) => {
               <div>
               <div className='small-content' /> 
                 <div className='food-container'>
-                  <img src={rest.img} alt={rest.title} className='img'/>
+                  <img src={rest.img} alt={rest.title} className='img' alt={rest.title}/>
                     <div className='food-content'>
                       <h2>{rest.title}</h2>
                       <p>{rest.desc}</p>
