@@ -8,6 +8,7 @@
 
 .web-name {
     color: #fbb152;
+    margin: 0;
 }
 
 .world-logo {
@@ -23,6 +24,10 @@
 }
 
 .navigation-item {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
     padding: 0 20px;
     margin: 0;
 }

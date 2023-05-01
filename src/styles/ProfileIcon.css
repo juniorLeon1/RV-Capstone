@@ -1,6 +1,6 @@
-.user-icon {
-    height: 80px;
-    width: 80px;
+.profile-icon {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: #fbb152;
     color: white;
@@ -9,6 +9,6 @@
     align-items: center;
 }
 
-.user-name-initial {
+.name-initial {
     margin: 0;
 }
