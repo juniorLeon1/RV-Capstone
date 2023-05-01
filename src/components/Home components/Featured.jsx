@@ -17,7 +17,7 @@ export default function Featured() {
           <p>
             "Avo Traveler has helped me see the world while creating the least harm to the enviornment. Any time I plan a trip I check Avo Traveler first."
 <br />
-            - Tom Smith
+            - Johnathon Dragomir
           </p>
           <Link className="FeaButton">Learn More</Link>
         </div>
