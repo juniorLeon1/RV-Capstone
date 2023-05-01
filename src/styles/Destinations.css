@@ -1,13 +1,20 @@
-
 .DestinationContainer {
-    max-width: 960px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 300px;
-    margin-top: 60px;
-    }
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 300px;
+  margin-top: 60px;
+}
+
+.item {
+  background-color: rgba(209, 121, 5, 0.537);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 40px;
+}
 
     .item {
         background-color:  #fbb152;
@@ -35,8 +42,9 @@
         width: 500px;
         height: 200px;
     } 
+
 .Button {
-    border-style: solid;
+  border-style: solid;
   border-width: 2px;
   border-color: white;
   padding: 19px 45px 20px;
@@ -56,4 +64,8 @@
     width: 200px; 
 }
 
+@media (max-width: 800px) {
+  .item img {
+    width: 200px;
+  }
 }

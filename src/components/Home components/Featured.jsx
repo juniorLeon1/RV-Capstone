@@ -8,7 +8,11 @@ export default function Featured() {
   return (
     <div className="Backdrop">
       <section className="imageFlex">
-        <img className="Item Person" src={Person1} alt="guy walking down the street"></img>
+        <img
+          className="Item Person"
+          src={Person1}
+          alt="guy walking down the street"
+        ></img>
         <img className="Item Circle" src={Circle} alt="big orange circle"></img>
       </section>
       <section>

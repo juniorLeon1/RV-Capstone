@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 import "../../styles/AccountHero.css";
-import UserIcon from "./UserIcon"
+import UserIcon from "./UserIcon";
 import { ProfileContext } from "../../context/profile-context";
 
 const LoggedIn = () => {
-  const { userInfo, role} = useContext(ProfileContext)
+  const { userInfo, role } = useContext(ProfileContext);
 
   const roleTag = () => {
     if (role === "Admin") {
-      return <p className="user-email">{userInfo.roles}</p>
+      return <p className="user-email">{userInfo.roles}</p>;
     }
-    return
-  }
+    return;
+  };
 
   return (
     <div>

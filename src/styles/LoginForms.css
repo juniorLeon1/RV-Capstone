@@ -45,11 +45,11 @@
 }
 
 .forgot-button {
-    margin-top: 20px;
-    border: none;
-    background-color: white;
-    text-decoration: underline;
-    color: #120940;
+  margin-top: 20px;
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: #120940;
 }
 
 .submit-button {
@@ -64,7 +64,7 @@
 }
 
 .submit-button:hover {
-    background-color: #fbb152;
+  background-color: #fbb152;
 }
 
 @media screen and (max-width: 820px) {

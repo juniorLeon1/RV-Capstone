@@ -8,11 +8,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
-
- .hero-text {
+.hero-text {
   width: 90%;
   height: 100%;
   max-width: 1000px;
@@ -44,8 +42,8 @@
   color: white;
   border-color: #fbb152;
   background-color: #fbb152;
-} 
+}
 
 p::selection {
-background: #fbb152;
+  background: #fbb152;
 }

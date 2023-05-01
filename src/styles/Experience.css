@@ -1,37 +1,33 @@
-
 .Experience {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
-
 .expContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: auto;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
 .expCard {
-    width: 18rem;
-    text-align: center;
-    margin-top: 20px;
+  width: 18rem;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .expText {
-    text-align: center;
-min-height: 200px;
+  text-align: center;
+  min-height: 200px;
 }
-
 
 .expImg {
-    max-block-size: 10rem;
-    padding-bottom: 20px;
+  max-block-size: 10rem;
+  padding-bottom: 20px;
 }
 .card-body {
-    height: 420px;
+  height: 420px;
 }
 
 .card-body:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
 }

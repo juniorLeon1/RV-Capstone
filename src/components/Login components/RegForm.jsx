@@ -10,18 +10,18 @@ const RegForm = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let data = {roles,userNames,email, passwords};
+    let data = { roles, userNames, email, passwords };
     postIntoData(data);
     console.log(data);
   };
 
-  const postIntoData = async (data) =>{
-    try{
+  const postIntoData = async (data) => {
+    try {
       const res = await axios.post("http://localhost:8800/users", data);
-      console.log("working in postIntoData")
+      console.log("working in postIntoData");
       return res;
-    }catch{
-      console.log("might be broken")
+    } catch {
+      console.log("might be broken");
     }
   };
 
@@ -36,7 +36,9 @@ const RegForm = (props) => {
         </button>
         <button
           onClick={() => props.onFormSwitch("register")}
-          className={`switch-button ${props.formValue === "register" ? "active-switch": "inactive-switch"}`}
+          className={`switch-button ${
+            props.formValue === "register" ? "active-switch" : "inactive-switch"
+          }`}
         >
           Sign Up
         </button>

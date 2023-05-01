@@ -56,7 +56,11 @@ const LaptopNav = () => {
               >
                 <ProfileIcon />
               </Link>
-              <ul className={`logout-drpdwn ${profileDrpdwnToggle === true ? "active" : "inactive"}`}>
+              <ul
+                className={`logout-drpdwn ${
+                  profileDrpdwnToggle === true ? "active" : "inactive"
+                }`}
+              >
                 <li className="logout-item">
                   <button className="logout-button" onClick={logoutHandler}>
                     Logout
