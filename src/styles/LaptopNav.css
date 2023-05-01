@@ -1,62 +1,98 @@
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 100px;
-    align-items: center;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+  align-items: center;
+  background-color: white;
 }
 
 .web-name {
-    color: #fbb152;
-    margin: 0;
+  color: #fbb152;
+  margin: 0;
 }
 
 .world-logo {
-    height: 80px;
-    width: 80px;
+  height: 80px;
+  width: 80px;
 }
 
 .navbar-links-container {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    padding: 0 20px;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .navigation-link {
-    color: #fbb152;
-    font-size: 20px;
+  color: #fbb152;
+  font-size: 20px;
 }
 
 .navigation-link:hover {
-    color: #120940
+  color: #120940;
 }
 
 .drpdwn-arrow {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .drpdwn-arrow.active {
-    transform: rotate(360deg);
-    transition: 500ms ease;
+  transform: rotate(360deg);
+  transition: 500ms ease;
 }
 
 .drpdwn-arrow.inactive {
-    transform: rotate(90deg);
-    transition: 500ms ease;
+  transform: rotate(90deg);
+  transition: 500ms ease;
+}
+
+.logout-drpdwn {
+  position: absolute;
+  top: 79px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #120940;
+  box-shadow: 5px 5px 10px #120940;
+}
+
+.logout-drpdwn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+
+.logout-drpdwn.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20);
+  transition: 500ms ease;
+}
+
+.logout-button {
+  border: none;
+  background-color: transparent;
+  color: #3b71ca;
+}
+
+.logout-button:hover {
+  color: #120940;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    .navbar-container {
-        display: none;
-    }
+  .navbar-container {
+    display: none;
+  }
 }
