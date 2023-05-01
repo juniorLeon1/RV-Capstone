@@ -3,6 +3,7 @@ import "../../styles/Hero.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+
   return (
     <div>
       <div className="hero-container">
@@ -17,8 +18,7 @@ const Hero = () => {
             possible. Explore how below.
           </p>
           <br />
-          <Link to="/profile" className="hero-button">
-            Learn More
+          <Link to='/destinations' className="hero-button">Learn More
           </Link>
         </div>
       </div>
