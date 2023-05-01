@@ -13,12 +13,11 @@ export default function Featured() {
       </section>
       <section>
         <div className="Item FeaText">
-          <h1>Review ofAvoTravles</h1>
+          <h1>Review of AvoTravles</h1>
           <p>
             "Every time I travel I use AvoTraveler. I can always count on them to provide me with accurate, up-to-date information on my destinations in an easy-to-use format. I cannot recommend it enough!"
-<br />
-            - Andres Barreras (founder of Queen City Calendar")
           </p>
+          <p> - Andres Barreras (founder of Queen City Calendar")</p>
           <Link className="FeaButton" to='/destinations'>Learn More</Link>
         </div>
       </section>

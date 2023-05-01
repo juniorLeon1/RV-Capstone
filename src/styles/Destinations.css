@@ -10,7 +10,7 @@
     }
 
     .item {
-        background-color: rgba(209, 121, 5, 0.537);
+        background-color:  #fbb152;
         font-size: 20px;
         padding: 20px;
         text-align: center;
@@ -46,9 +46,9 @@
   letter-spacing: 2px;
 }
 .Button:hover {
-    color: white;
+    color:  #fbb152;
     border-color: #fbb152;
-    background-color: #fbb152;
+    background-color: #fff;
   } 
 
     @media (max-width: 800px) {
