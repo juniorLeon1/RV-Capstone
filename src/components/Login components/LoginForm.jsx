@@ -1,13 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/LoginForms.css";
 
 const LoginForm = (props) => {
-  const [email, setEmail] = useState("");
+  const [emailInput, setEmailInput] = useState("");
   const [pass, setPass] = useState("");
+
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://localhost:8800/users");
+        const data = await response.json();
+        setData(data);
+      } catch (err) {
+        console.error("Error fetching data:", err);
+      }
+    };
+    fetchData();
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email);
+  };
+
+  const loginHandler = () => {
+    const findUser = data.filter((data) => {
+      if (emailInput === data.email) {
+        return data.email === emailInput;
+      }
+    });
+    try{
+      if(findUser[0] === undefined){
+        throw new Error("Email is not found")
+      }
+
+      if(findUser[0].passwords !== pass){
+        return alert("Incorrect Password!")
+      }else{
+        return (props.setLoggedIn(true),
+          props.setRole(findUser[0].roles)
+          
+        )
+      }
+    }catch(error){
+      return alert(`${error.message}`)
+    }
   };
 
   return (
@@ -32,8 +69,8 @@ const LoginForm = (props) => {
       <form className="login-form" onSubmit={handleSubmit}>
         <input
           className="email-input"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          value={emailInput}
+          onChange={(event) => setEmailInput(event.target.value)}
           type="email"
           id="email"
           name="email"
@@ -59,7 +96,7 @@ const LoginForm = (props) => {
           Forgot your password?
         </button>
 
-        <button type="submit" className="submit-button">
+        <button type="submit" className="submit-button" onClick={loginHandler}>
           Log In
         </button>
       </form>
