@@ -63,6 +63,7 @@
 .item img {
     width: 200px; 
 }
+    }
 
 @media (max-width: 800px) {
   .item img {
