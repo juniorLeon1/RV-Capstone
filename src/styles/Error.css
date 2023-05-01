@@ -2,4 +2,16 @@
 .Error {
     text-align: center;
     background-color: rgb(215, 215, 214);
+    height: 600px;
+}
+.avoguy {
+    max-width: 700px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+} 
+
+@media (max-width: 720px) {
+    .avoguy {
+        max-width: 350px;
+    }
 }

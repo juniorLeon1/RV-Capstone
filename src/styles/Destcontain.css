@@ -1,29 +1,28 @@
-/* .body{
-  background-color: #fbb152;
-} */
-
 .App {
     text-align: center;
     background-color: #fbb152;
+    padding-bottom: 5%;
 }
   
+<<<<<<< HEAD
   
+=======
+ 
+>>>>>>> origin
   .container {
     display: flex;
-    /* flex-wrap: wrap;  */
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start; 
-    margin-top: 50px; 
+    /* margin-top: 50px;  */
     text-align: center;
+    padding: 50px;
   }
 
   .place-container{
     flex-basis: 60%;
   }
   
-
-
 /* Side Bar */
 .side-content {
     flex-basis: 20%;
@@ -35,7 +34,6 @@
   padding: 0 50px;
   margin-top: 50px; 
   text-align: center;
-  padding-bottom: 5%;
 }
 
  section {

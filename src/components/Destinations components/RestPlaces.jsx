@@ -8,7 +8,7 @@ const RestPlaces = (props) => {
           {props.value.map(rest => {
             return (
               <div>
-              <div className='small-content' /> 
+              <div className='small-content' key={rest.id}/> 
                 <div className='food-container'>
                   <img src={rest.img} alt={rest.title} className='img'/>
                     <div className='food-content'>

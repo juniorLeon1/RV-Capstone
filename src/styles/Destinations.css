@@ -51,9 +51,6 @@
     background-color: #fbb152;
   } 
 
-
-
-
     @media (max-width: 800px) {
 .item img {
     width: 200px; 

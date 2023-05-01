@@ -29,42 +29,44 @@ const Brazil = () => {
 
 
   return (
-    <section className="App">
-      <div>
-        <header style={{ paddingLeft: 0 }}>
-          <div
-            className='p-5 text-center bg-image'
-            style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/2018/12/9008-1.jpg')", height: 600 }}
-          >
-            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-              <div className='d-flex justify-content-center align-items-center h-100'>
-                <div className='text-white'>
-                  <h1 className='display-3 fw-bold'>Brazil</h1>
-                </div>
+
+    <div>
+      <header style={{ paddingLeft: 0 , position: 'relative', zIndex: -1}}>
+        <div
+          className='p-5 text-center bg-image'
+          style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/2018/12/9008-1.jpg')", height: 600 }} alt="Brazil"
+        >
+          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+            <div className='d-flex justify-content-center align-items-center h-100'>
+              <div className='text-white'>
+                <h1 className='display-3 fw-bold'>Brazil</h1>
               </div>
             </div>
           </div>
-        </header>
-      </div>
-      <section className='container'>
-        
-        <section className='place-container'>
-          <h2>Eco-Friendly Places</h2>
-          <PlacesCard value={brazilPlaces}/>
-        </section>
-
-        <section>
-          <SideBar className='side-content' info={side}/>
-        </section>
+        </div>
+      </header>
       
-      </section>
+      <section className="App">
+        <section className='container'>
+          
+          <section className='place-container'>
+            <h2>Eco-Friendly Places</h2>
+            <PlacesCard value={brazilPlaces}/>
+          </section>
 
-      <section className='rest-container'>
-        <h2>Eco-Friendly Resturants</h2>
-        <RestPlaces value={brazilRest} />
-      </section>
+          <section>
+            <SideBar className='side-content' info={side}/>
+          </section>
+        
+        </section>
 
-    </section>
+        <section className='rest-container'>
+          <h2>Eco-Friendly Resturants</h2>
+          <RestPlaces value={brazilRest} />
+        </section>
+
+      </section>
+    </div>
   )
 }
 
