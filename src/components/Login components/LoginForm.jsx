@@ -7,7 +7,7 @@ const LoginForm = (props) => {
   const [emailInput, setEmailInput] = useState("");
   const [pass, setPass] = useState("");
   const { setLoggedIn, setRole, setUserInfo } = useContext(ProfileContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -52,7 +52,7 @@ const LoginForm = (props) => {
       return alert(`${error.message}`);
     }
   };
-  
+
   return (
     <div className="auth-form-container">
       <div className="switch-auth">
@@ -96,18 +96,18 @@ const LoginForm = (props) => {
         />
 
         <button
-          onClick={() => props.onFormSwitch("forgot")}
-          className="forgot-button"
-        >
-          Forgot your password?
-        </button>
-
-        <button
           type="submit"
           className="submit-button"
           onClick={() => loginHandler()}
         >
           Log In
+        </button>
+
+        <button
+          onClick={() => props.onFormSwitch("forgot")}
+          className="forgot-button"
+        >
+          Forgot your password?
         </button>
       </form>
     </div>
