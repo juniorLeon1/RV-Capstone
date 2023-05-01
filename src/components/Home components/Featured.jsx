@@ -15,11 +15,11 @@ export default function Featured() {
         <div className="Item FeaText">
           <h1>Review ofAvoTravles</h1>
           <p>
-            "Avo Traveler has helped me see the world while creating the least harm to the enviornment. Any time I plan a trip I check Avo Traveler first."
+            "Every time I travel I use AvoTraveler. I can always count on them to provide me with accurate, up-to-date information on my destinations in an easy-to-use format. I cannot recommend it enough!"
 <br />
-            - Johnathon Dragomir
+            - Andres Barreras (founder of Queen City Calendar")
           </p>
-          <Link className="FeaButton">Learn More</Link>
+          <Link className="FeaButton" to='/destinations'>Learn More</Link>
         </div>
       </section>
     </div>
