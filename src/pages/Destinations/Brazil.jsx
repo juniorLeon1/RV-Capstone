@@ -34,7 +34,7 @@ const Brazil = () => {
       <header style={{ paddingLeft: 0 , position: 'relative', zIndex: -1}}>
         <div
           className='p-5 text-center bg-image'
-          style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/2018/12/9008-1.jpg')", height: 600 }}
+          style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/2018/12/9008-1.jpg')", height: 600 }} alt="Brazil"
         >
           <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
             <div className='d-flex justify-content-center align-items-center h-100'>
