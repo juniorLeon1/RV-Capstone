@@ -1,63 +1,62 @@
 .App {
-    text-align: center;
-    background-color: #fbb152;
-    padding-bottom: 5%;
+  text-align: center;
+  background-color: #fbb152;
+  padding-bottom: 5%;
 }
-  
- 
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start; 
-    /* margin-top: 50px;  */
-    text-align: center;
-    padding: 50px;
-  }
 
-  .place-container{
-    flex-basis: 60%;
-  }
-  
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* margin-top: 50px;  */
+  text-align: center;
+  padding: 50px;
+}
+
+.place-container {
+  flex-basis: 60%;
+}
+
 /* Side Bar */
 .side-content {
-    flex-basis: 20%;
-    padding-right: 50px;
-    font-size: 80%;
-  }
+  flex-basis: 20%;
+  padding-right: 50px;
+  font-size: 80%;
+}
 
-.rest-container{
+.rest-container {
   padding: 0 50px;
-  margin-top: 50px; 
+  margin-top: 50px;
   text-align: center;
 }
 
- section {
-    margin-bottom: 50px;
+section {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  @media only screen and (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-  
-    .place-container {
-      flex-basis: 60%;
-    }
-  
-    .side-content {
-      padding-right: 50px;
-    }
-  
-    .rest-container {
-      padding: 0 10%;
-    }
+  .place-container {
+    flex-basis: 60%;
   }
-  
-  @media only screen and (min-width: 1024px) {
-    .side-content {
-      font-size: 100%;
-    }
+
+  .side-content {
+    padding-right: 50px;
   }
+
+  .rest-container {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .side-content {
+    font-size: 100%;
+  }
+}

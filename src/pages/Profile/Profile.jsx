@@ -18,11 +18,7 @@ const Profile = () => {
     }
   };
 
-  return (
-    <div>
-      {profilePageType()}
-    </div>
-  );
+  return <div>{profilePageType()}</div>;
 };
 
 export default Profile;

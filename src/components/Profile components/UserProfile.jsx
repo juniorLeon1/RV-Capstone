@@ -1,5 +1,5 @@
 import React from "react";
-import AccountHero from "./AccountHero"
+import AccountHero from "./AccountHero";
 import SavedList from "./SavedList";
 
 const UserProfile = () => {

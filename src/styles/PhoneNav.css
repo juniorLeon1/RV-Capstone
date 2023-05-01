@@ -8,14 +8,14 @@
 }
 
 .icon-and-caret {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .caret-icon {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .drpdwn-arrow {
@@ -33,40 +33,40 @@
 }
 
 .logout-drpdwn {
-    position: absolute;
-    top: 79px;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid #120940;
-    box-shadow: 5px 5px 10px #120940;
-  }
-  
-  .logout-drpdwn.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: 500ms ease;
-  }
-  
-  .logout-drpdwn.inactive {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20);
-    transition: 500ms ease;
-  }
-  
-  .logout-button {
-    border: none;
-    background-color: transparent;
-    color: #3b71ca;
-  }
-  
-  .logout-button:hover {
-    color: #120940;
-  }
+  position: absolute;
+  top: 79px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #120940;
+  box-shadow: 5px 5px 10px #120940;
+}
+
+.logout-drpdwn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 500ms ease;
+}
+
+.logout-drpdwn.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20);
+  transition: 500ms ease;
+}
+
+.logout-button {
+  border: none;
+  background-color: transparent;
+  color: #3b71ca;
+}
+
+.logout-button:hover {
+  color: #120940;
+}
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .phone-navbar-container {

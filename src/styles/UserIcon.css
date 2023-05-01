@@ -1,14 +1,14 @@
 .user-icon {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: #fbb152;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #fbb152;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-name-initial {
-    margin: 0;
+  margin: 0;
 }
