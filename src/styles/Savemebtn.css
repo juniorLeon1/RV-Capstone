@@ -1,0 +1,28 @@
+.savemelistbutton {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fbb152;
+    padding: 19px 45px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fbb152;
+    letter-spacing: 2px;
+    text-align: center;
+    /* margin: 30px 40px; */
+    max-width: 50%;
+    background-color: white;
+}
+
+.savemelistbutton:hover {
+    color: white;
+    border-color: #fbb152;
+    background-color: #fbb152;
+  }
+
+  @media screen and (max-width: 767px) {
+    .savemelistbutton {
+      font-size: 16px;
+      max-width: 80%;
+      padding: 15px 35px 16px;
+    }
+  }

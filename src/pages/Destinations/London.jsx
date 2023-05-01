@@ -12,14 +12,18 @@ const London = () => {
   const side = [
     {
       img: require("../../images/RV_Charlotte.jpeg"),
-      title: "Charlotte"
+      title: "Charlotte",
+      url: "/destinations/charlotte"
     },
     {
       img: require("../../images/RV_Brazil.jpeg"),
-      title: "Brazil"
+      title: "Brazil",
+      url: "/destinations/brazil"
     },
     {
       img: require("../../images/RV_Puerto_Rico.webp"),
+      title: "Puerto Rico",
+      url: "/destinations/puerto-rico"
     }
     ]
 

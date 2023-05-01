@@ -12,15 +12,18 @@ const PRico = () => {
   const side = [
     {
       img: require("../../images/RV_Charlotte.jpeg"),
-      title: "Charlotte"
+      title: "Charlotte",
+      url:"/destinations/charlotte"
     },
     {
       img: require("../../images/RV_Brazil.jpeg"),
-      title: "Brazil"
+      title: "Brazil",
+      url:"/destinations/brazil"
     },
     {
       img: require("../../images/RV_London.jpeg"),
-      title: "London"
+      title: "London",
+      url:"/destinations/london"
     },
   ];
 
@@ -49,7 +52,7 @@ const PRico = () => {
           </section>
 
           <section>
-            <SideBar info={side}/>
+            <SideBar info={side} />
           </section>
           {/* <h2>Eco-Friendly Resturants</h2>
           <RestPlaces value={pRicoRest} /> */}

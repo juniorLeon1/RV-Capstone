@@ -1,7 +1,12 @@
-/* .App {
+/* .body{
+  background-color: #fbb152;
+} */
+
+.App {
     text-align: center;
+    background-color: #fbb152;
 }
-   */
+  
   
   .container {
     display: flex;
@@ -30,8 +35,35 @@
   padding: 0 50px;
   margin-top: 50px; 
   text-align: center;
+  padding-bottom: 5%;
 }
 
  section {
     margin-bottom: 50px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .place-container {
+      flex-basis: 60%;
+    }
+  
+    .side-content {
+      padding-right: 50px;
+    }
+  
+    .rest-container {
+      padding: 0 10%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .side-content {
+      font-size: 100%;
+    }
   }

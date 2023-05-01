@@ -28,7 +28,7 @@ function Footer() {
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
               <h6 className='text-primary fw-bold mb-4'>
-                <MDBIcon color='primary' icon='gem' className='me-3' />
+                <MDBIcon color='primary' icon='' className='me-3' />
                 AvoTravler
               </h6>
               <p className="custom-color">
@@ -40,50 +40,26 @@ function Footer() {
             <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-primary fw-bold mb-4'>DESTINATION</h6>
               <p>
-                <a href='#!' className="custom-color">
+                <a href='/destinations/charlotte' className="custom-color">
                   Charlotte
                 </a>
               </p>
               <p>
-                <a href='#!' className="custom-color">
+                <a href='/destinations/brazil' className="custom-color">
                   Brazil
                 </a>
               </p>
               <p>
-                <a href='#!' className="custom-color">
+                <a href='/destinations/puerto-rico' className="custom-color">
                 Puerto Rico
                 </a>
               </p>
               <p>
-                <a href='#!' className="custom-color">
+                <a href='/destinations/london' className="custom-color">
                   London
                 </a>
               </p>
             </MDBCol>
-
-            {/* <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Settings
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol> */}
 
             <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
               <h6 className='text-primary fw-bold mb-4'>CONTACT</h6>

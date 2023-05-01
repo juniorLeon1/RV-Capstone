@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../styles/Restplaces.css"
-import SaveButton from './SaveButton'
+import Savemebtn from './Savemebtn'
 
 const RestPlaces = (props) => {
   return (
@@ -14,7 +14,7 @@ const RestPlaces = (props) => {
                     <div className='food-content'>
                       <h2>{rest.title}</h2>
                       <p>{rest.desc}</p>
-                      <SaveButton />
+                      <Savemebtn />
                     </div>
                 </div>
                 </div>

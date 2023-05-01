@@ -12,15 +12,18 @@ const Brazil = () => {
   const side = [
     {
       img: require("../../images/RV_Charlotte.jpeg"),
-      title: "Charlotte"
+      title: "Charlotte",
+      url: "/destinations/charlotte"
     },
     {
       img: require("../../images/RV_Puerto_Rico.webp"),
-      title: "Puerto Rico"
+      title: "Puerto Rico",
+      url: "/destinations/puerto-rico"
     },
     {
       img: require("../../images/RV_London.jpeg"),
-      title: "London"
+      title: "London",
+      url: "/destinations/london"
     },
   ];
 
