@@ -1,95 +1,68 @@
 import React from 'react'
+import PlacesCard from '../../components/Destinations components/PlacesCard';
+import RestPlaces from '../../components/Destinations components/RestPlaces';
+import SideBar from '../../components/Destinations components/SideBar';
+import LocationsArray from '../../components/Destinations components/LocationsArray';
+import '../../styles/Destcontain.css';
 
 const London = () => {
+  const londonPlaces = LocationsArray[2].London.places;
+  const londonRest = LocationsArray[2].London.rest;
+
+  const side = [
+    {
+      img: require("../../images/RV_Charlotte.jpeg"),
+      title: "Charlotte",
+      url: "/destinations/charlotte"
+    },
+    {
+      img: require("../../images/RV_Brazil.jpeg"),
+      title: "Brazil",
+      url: "/destinations/brazil"
+    },
+    {
+      img: require("../../images/RV_Puerto_Rico.webp"),
+      title: "Puerto Rico",
+      url: "/destinations/puerto-rico"
+    }
+    ]
+
   return (
-    <div className="App">
-    <header style={{ paddingLeft: 0 }}>
-        <div
-          className='p-5 text-center bg-image'
-          style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: 600 }}
-        >
-          <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-            <div className='d-flex justify-content-center align-items-center h-100'>
-              <div className='text-white'>
-                <h1 className='display-3 fw-bold'>London</h1>
+    <section className="App">
+      <div>
+        <header style={{ paddingLeft: 0 }}>
+          <div
+            className='p-5 text-center bg-image'
+            style={{ backgroundImage: "url('https://travellemming.com/wp-content/uploads/Things-to-Do-in-London.jpg')", height: 600 }}
+          >
+            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+              <div className='d-flex justify-content-center align-items-center h-100'>
+                <div className='text-white'>
+                  <h1 className='display-3 fw-bold'>London</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </header>
-    <div className="container">
-      <div className="main-content">
-        <section className='main-content-title'>
+        </header>
+      </div>
+      <section className='container'>
+        <section className='place-container'>
           <h2>Eco-Friendly Places</h2>
+          <PlacesCard value={londonPlaces}/>
         </section>
-        <section>
-          <img src={require("../../images/RV_Kensington.jpeg")} alt='' className='img' />
-          <h2>The Kensington Garden</h2>
-          <p>Once the private gardens of Kensington Palace, are among the Royal Parks of London. The gardens are shared by the City of Westminster and the Royal Borough of Kensington and Chelsea and sit immediately to the west of Hyde Park, in western central London.</p>
-        </section>
-        <section>
-          <img src={require("../../images/RV_Arcola.jpeg")} alt='' className='img' />
-          <h2>Arcola Theatre</h2>
-          <p>Arcola produces daring, high-quality theatre in the heart of East London and beyond. Experience brand new works and bold new productions of classics.</p>
-        </section>
-        <section>
-          <img src={require("../../images/RV_Buck_Street.jpeg")} alt='' className='img' />
-          <h2>Camden Market Buck Street</h2>
-          <p>Home to a host of new, up and coming street food traders, many of which have a focus on vegan and vegetarian options, as well as ethical fashion and retailers. Head to the rooftop for independent food traders, and don’t miss the mini market on the ground floor for some unique finds.</p>
-        </section>
-      </div>
 
-      <div className="side-content">
-        <section>
-          <img src={require("../../images/RV_Charlotte.jpeg")} alt='' className='side-img' />
-          <h2 className='side-content-title'>Charlotte</h2>
-        </section>
-        <section>
-          <img src={require("../../images/RV_Brazil.jpeg")} alt='' className='side-img' />
-          <h2 className='side-content-title'>Brazil</h2>
-        </section>
-        <section>
-          <img src={require("../../images/RV_Puerto_Rico.webp")} alt='' className='side-img' />
-          <h2 className='side-content-title'>Puerto Rico</h2>
-        </section>
-      </div>
+          <section>
+            <SideBar className='side-content' info={side}/>
+          </section>
+      
+      </section>
 
-      <div className="small-content">
-        <section className='small-content-title'>
+        <section className='rest-container'>
           <h2>Eco-Friendly Resturants</h2>
+          <RestPlaces value={londonRest} />
         </section>
-        {/* <section>
-          <h2>Related Posts</h2>
-          <ul>
-            <li><a href="#">10 Best Responsive Design Examples</a></li>
-            <li><a href="#">Why Responsive Design is Essential for SEO</a></li>
-            <li><a href="#">Responsive Design Tools and Resources</a></li>
-          </ul>
-        </section> */}
-        <section className='food-container'>
-          <img src={require("../../images/RV_Clerkenwell.jpeg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>The Clerkenwell Kitchen</h2>
-            <p>Cafe using organic and free range produce in simple European breakfast and lunch menus and snacks.</p>
-          </section>
-        </section>
-        <section className='food-container'>
-          <img src={require("../../images/RV_Oliveira.jpeg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>Oliveira Kitchen</h2>
-            <p>Biodynamic fare is served with wine, cocktails & superfood smoothies at this cosy, bohemian eatery.</p>
-          </section>
-        </section>
-        <section className='food-container'>
-          <img src={require("../../images/RV_Eco.jpeg")} alt='' className='img' />
-          <section className='food-content'>
-            <h2>Eco Restaurant</h2>
-            <p>Italian pizza place with distressed brick walls, pendant lamps, wooden counter seats and banquettes.</p>
-          </section>
-        </section>
-      </div>
-    </div>
-  </div>
+
+    </section>
   )
 }
 
