@@ -28,4 +28,6 @@ min-height: 200px;
     max-block-size: 10rem;
     padding-bottom: 20px;
 }
-
+.card-body {
+    height: 420px;
+}
