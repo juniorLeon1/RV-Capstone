@@ -6,31 +6,31 @@ import Login from "./pages/Profile/Login";
 import Error from "./pages/Error";
 import Destinations from "./pages/Destinations/Destinations";
 import Profile from "./pages/Profile/Profile";
-import Brazil from "./pages/Destinations/Brazil"
-import Charlotte from "./pages/Destinations/Charlotte"
-import London from "./pages/Destinations/London"
-import PRico from "./pages/Destinations/PRico"
+import Brazil from "./pages/Destinations/Brazil";
+import Charlotte from "./pages/Destinations/Charlotte";
+import London from "./pages/Destinations/London";
+import PRico from "./pages/Destinations/PRico";
+import ProfileContextProvider from "./context/profile-context";
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [role, setRole] = useState("");
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout setIsLoggedIn={setIsLoggedIn} />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login setIsLoggedIn={setIsLoggedIn} setRole={setRole} />} />
-          <Route path="profile" element={<Profile setIsLoggedIn={setIsLoggedIn} setRole={setRole} />} />
-          <Route path="destinations" element={<Destinations />} />
-          <Route path="destinations/charlotte" element={<Charlotte setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="destinations/brazil" element={<Brazil setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="destinations/london" element={<London setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="destinations/puerto-rico" element={<PRico setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ProfileContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="destinations" element={<Destinations />} />
+            <Route path="destinations/charlotte" element={<Charlotte />} />
+            <Route path="destinations/brazil" element={<Brazil />} />
+            <Route path="destinations/london" element={<London />} />
+            <Route path="destinations/puerto-rico" element={<PRico />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ProfileContextProvider>
   );
 };
 

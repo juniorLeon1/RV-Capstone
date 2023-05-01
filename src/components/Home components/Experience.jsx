@@ -5,43 +5,21 @@ import Luggage from "../../images/luggage.png";
 import Sun from "../../images/sunrise.png";
 import Ticket from "../../images/ticket.png";
 import "../../styles/Experience.css";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-
-const boxVariant = {
-  visible: { opacity: 1, scale: 1 },
-  transition: { duration: 0.5 },
-  hidden: { opacity: 0, scale: 0 },
-};
 
 export default function Experience() {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
 
   return (
     <div className="Experience">
       <div className="expText">
         <h2>Experience sustainable travel</h2>
+        <div className="marginsneeded">
         <p>
           The negative enviornmental impacts of tourism are substatial. They include the depletion of local natural resources as well as pollution and waste problems. Trourism often puts pressure on natural resourcs through over-consumption, often in places where resources are already scarce.
         </p>
+        </div>
       </div>
       <div className="expContainer">
-      <motion.div
-      ref={ref}
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-        >
+     
           <Card className="expCard">
             <Card.Body>
               <img
@@ -56,15 +34,7 @@ export default function Experience() {
               </Card.Text>
             </Card.Body>
           </Card>
-          </motion.div>
-        
-
-        <motion.div
-          ref={ref}
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-        >
+       
         <Card className="expCard">
           <Card.Body>
             <img className="expImg" src={Luggage} alt="lugge icon" />
@@ -75,14 +45,7 @@ export default function Experience() {
             </Card.Text>
           </Card.Body>
         </Card>
-        </motion.div>
-
-        <motion.div
-          ref={ref}
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-        >
+      
         <Card className="expCard">
           <Card.Body>
             <img className="expImg" src={Sun} alt="sunrise on the beach" />
@@ -93,14 +56,7 @@ export default function Experience() {
             </Card.Text>
           </Card.Body>
         </Card>
-        </motion.div>
-
-        <motion.div
-          ref={ref}
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-        >
+       
         <Card className="expCard">
           <Card.Body>
             <img className="expImg" src={Ticket} alt="tickets" />
@@ -111,7 +67,6 @@ export default function Experience() {
             </Card.Text>
           </Card.Body>
         </Card>
-        </motion.div>
       </div>
     </div>
   );

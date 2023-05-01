@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
 import "../../styles/AccountHero.css";
 import UserIcon from "./UserIcon"
+import { ProfileContext } from "../../context/profile-context";
 
 const LoggedIn = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:8800/users");
-        const data = await response.json();
-        setData(data);
-      } catch (err) {
-        console.error("Error fetching data:", err);
-      }
-    };
-    fetchData();
-  }, []);
+  const { userInfo } = useContext(ProfileContext)
 
   return (
     <div>
@@ -23,8 +12,8 @@ const LoggedIn = () => {
         <div className="left-info">
           <UserIcon />
           <div className="user-info">
-            <h1 className="full-name">John Doe</h1>
-            <p className="user-email">johnD@gmail.com</p>
+            <h1 className="full-name">{userInfo.userNames}</h1>
+            <p className="user-email">{userInfo.email}</p>
           </div>
         </div>
       </div>
