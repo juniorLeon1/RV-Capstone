@@ -25,19 +25,26 @@ const LoginForm = (props) => {
 
   const loginHandler = () => {
     const findUser = data.filter((data) => {
-      if (emailInput === data.email && pass === data.passwords) {
+      if (emailInput === data.email) {
         return data.email === emailInput;
       }
     });
-    console.log(findUser[0]);
+    try{
+      if(findUser[0] === undefined){
+        throw new Error("Email is not found")
+      }
 
-    if (!emailInput || !pass) {
-      alert("You must put a valid email and password");
-      return;
-    } 
-    // else {
-    //   props.setIsLoggedIn(true);
-    // }
+      if(findUser[0].passwords !== pass){
+        return alert("Incorrect Password!")
+      }else{
+        return (props.setLoggedIn(true),
+          props.setRole(findUser[0].roles)
+          
+        )
+      }
+    }catch(error){
+      return alert(`${error.message}`)
+    }
   };
 
   return (

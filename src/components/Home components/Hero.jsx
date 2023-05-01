@@ -7,8 +7,9 @@ const Hero = () => {
     <div>
       <div className="hero-container">
         <div className="hero-text">
-          <h1>AvoTravels</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h1>AvoTraveler</h1>
+          <p>At AvoTraveler our goal is to promote sustainable travel by providing users with information about eco-friendly accommodations accross our various locations. Explore this years expert aproved places to travel the most sustainable way possible with our guides. AvoTraveler was born from the idea that a better way to travel is possible. Explore how below.
+</p>
           <br />
           <Link to='/profile' className="hero-button">Learn More
           </Link>
