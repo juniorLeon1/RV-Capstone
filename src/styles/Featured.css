@@ -4,15 +4,12 @@
    margin: 100px auto;
    padding: 10px 80px;
    display: inline-flex;
-   /* display: grid;
-   grid-template-columns: 10% 10% 10% 10% 40%;
-   grid-template-rows: auto 20% 40%;
-   height: 750px; */
 
 }
 .imageFlex {
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
 }
 
 .Person {
@@ -20,11 +17,6 @@
     width: 507px;
     z-index: 2;
     border-radius: 50%;
-    padding-top: 30px;
-    /* grid-column-start: 1 !important;
-    grid-column-end: 5;
-    grid-row: 3 / span 3; */
-    /* margin: -128px auto 60px 377px; */
  }
 
 .Circle {
@@ -46,6 +38,9 @@
     align-items: flex-end;
     position: relative;
     left: -120px;
+}
+.FeaText p {
+    padding-left: 20px;
 }
 .FeaButton {
     border-style: solid;
