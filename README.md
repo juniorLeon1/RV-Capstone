@@ -32,7 +32,7 @@ This will start the developemet server, and you can view the app at http://local
 
 * Ecotourism options for 4 locations across the world
 * Login system with user database
-* Ability to save locations to list in user profile
+* Ability to save locations to list in user profile (in progress)
 
 ## Technologies Used
 
@@ -45,13 +45,6 @@ This will start the developemet server, and you can view the app at http://local
 * HTML
 * CSS
 * JavaScript
-npm cors
-npm express
-npm mysql2
-npm react
-npm react-dom
-npm axios
-npm react-router-dom
 
 ## Contributing
 
