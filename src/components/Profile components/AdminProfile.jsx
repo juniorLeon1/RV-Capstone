@@ -8,7 +8,7 @@ const AdminProfile = () => {
       <AccountHero />
       <CreateLocations />
     </div>
-  )
-}
+  );
+};
 
-export default AdminProfile
+export default AdminProfile;

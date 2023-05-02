@@ -126,4 +126,4 @@ const CreateLocations = () => {
   )
 }
 
-export default CreateLocations
+export default CreateLocations;

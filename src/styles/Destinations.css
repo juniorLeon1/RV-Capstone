@@ -1,42 +1,49 @@
-
 .DestinationContainer {
-    max-width: 960px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 300px;
-    margin-top: 60px;
-    }
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 300px;
+  margin-top: 60px;
+}
 
-    .item {
-        background-color: rgba(209, 121, 5, 0.537);
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
-        border-radius: 40px;
-        
-    }
-    
-    .title {
-        text-align: center;
-        padding: 30px;
-    }
-    .item:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
-    }
-    
-    .item h1 {
-        padding: 20px;
-        color: #120490;
-    }
-   
-    .item img {
-        width: 500px;
-        height: 200px;
-    } 
+.item {
+  background-color: rgba(209, 121, 5, 0.537);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.item {
+  background-color: #fbb152;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.title {
+  text-align: center;
+  padding: 30px;
+}
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
+}
+
+.item h1 {
+  padding: 20px;
+  color: #120490;
+}
+
+.item img {
+  width: 500px;
+  height: 200px;
+}
+
 .Button {
-    border-style: solid;
+  border-style: solid;
   border-width: 2px;
   border-color: white;
   padding: 19px 45px 20px;
@@ -46,14 +53,19 @@
   letter-spacing: 2px;
 }
 .Button:hover {
-    color: white;
-    border-color: #fbb152;
-    background-color: #fbb152;
-  } 
-
-    @media (max-width: 800px) {
-.item img {
-    width: 200px; 
+  color: #fbb152;
+  border-color: #fbb152;
+  background-color: #fff;
 }
 
+@media (max-width: 800px) {
+  .item img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .item img {
+    width: 200px;
+  }
 }

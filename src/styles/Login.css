@@ -1,11 +1,11 @@
 .auth-container {
-    text-align: center;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/login-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  text-align: center;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/login-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
