@@ -16,10 +16,10 @@ const SavedList = () => {
             <option value="date">Created Date</option>
           </select>
           <button className="create-list-button">
-            Create List <i class="fa-solid fa-plus"></i>
+            Create List <i className="fa-solid fa-plus"></i>
           </button>
           <button className="remove-list-button">
-            Remove list <i class="fa-solid fa-minus"></i>
+            Remove list <i className="fa-solid fa-minus"></i>
           </button>
         </div>
       </div>
