@@ -1,0 +1,25 @@
+.createLocation-body {
+    width: 80vw;
+    margin: auto;
+  }
+
+.createLocation-container{
+  padding: 30px;
+  border: 1px black;
+}
+
+.image-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.LocationName-Input{
+    display: flex;
+    flex-direction: column;
+}
+
+.Desc-input{
+    display: flex;
+    flex-direction: column;
+}
+
