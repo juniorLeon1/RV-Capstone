@@ -1,7 +1,6 @@
 -- create database avoTravelerDB;
 use avoTravelerDB;
 -- drop table destination;
--- drop table users;
 
 create table destination(
 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -19,7 +18,7 @@ latitude decimal(10, 6)
     ('São Paulo, Brazil','./images-public/Sao.jpg',"/destinations/brazil",-46.625290,-23.533773);
 
 
-
+-- drop table users;
 
 -- CREATE TABLE users (
 -- 	id				INT		AUTO_INCREMENT		PRIMARY KEY,
