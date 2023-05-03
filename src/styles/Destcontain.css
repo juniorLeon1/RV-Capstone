@@ -48,6 +48,7 @@ section {
 
   .side-content {
     padding-right: 50px;
+    
   }
 
   .rest-container {
@@ -58,5 +59,25 @@ section {
 @media only screen and (min-width: 1024px) {
   .side-content {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .side-content {
+    display: none;
+  }
+  .container {
+    display: block;
+  }
+  .rest-container {
+    padding: 0%;
+  }
+}
+@media only screen and (max-width: 768px), (min-width: 450px)  {
+  .food-container {
+display: block;
+  }
+  .side-content {
+    display: none;
   }
 }
