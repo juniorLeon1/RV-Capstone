@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "../../styles/LoginForms.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { ProfileContext } from "../../context/profile-context";
 
 const RegForm = (props) => {
   const [email, setEmail] = useState("");
   const [passwords, setPasswords] = useState("");
   const [userNames, setUserNames] = useState("");
   const roles = "User";
+  const navigate = useNavigate();
+  const { loggedIn, setLoggedIn, setRole, setUserInfo, users } =
+    useContext(ProfileContext);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     let data = { roles, userNames, email, passwords };
     postIntoData(data);
@@ -24,6 +29,34 @@ const RegForm = (props) => {
       console.log("might be broken");
     }
   };
+
+  const registerHandler = () => {
+    const duplicateFinder = users.filter((user) => user.email === email);
+
+    const tempUser = {
+      roles: "User",
+      userNames: userNames,
+      email: email,
+    };
+
+    try {
+      if (duplicateFinder.length > 0) {
+        throw new Error("Email already in use!");
+      } else {
+        setLoggedIn(true);
+        setRole(tempUser.roles);
+        setUserInfo(tempUser);
+      }
+    } catch (error) {
+      return alert(`${error.message}`);
+    }
+  };
+
+  useEffect(() => {
+    if (loggedIn) {
+      navigate("/profile");
+    }
+  });
 
   return (
     <div className="auth-form-container">
@@ -77,7 +110,11 @@ const RegForm = (props) => {
           required
         />
 
-        <button type="submit" className="submit-button">
+        <button
+          type="submit"
+          className="submit-button"
+          onClick={() => registerHandler()}
+        >
           Register
         </button>
       </form>

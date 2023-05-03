@@ -7,9 +7,11 @@ Capstone is a project designed to demonstrate our growth througout the program. 
 We chose to do a travel themed website called AVOTRAVELER more information below:
 
 ## AVOTRAVELER
+
 ![Logo](/src/images/page1.png)
 ![Logo](/src/images/page2.png)
 ![Logo](/src/images/Profile.png)
+
 Welcome to the Red Ventures team Capstone Project. AvoTraveler is dedicated to providing our users with sustainabe ways to travel. We currently offer 4 locations to choose from. Our comprehensive guides will help you see the world while also leaving the world a better place.
 
 ## INSTALLATION
@@ -35,7 +37,8 @@ This will start the developemet server, and you can view the app at http://local
 
 * Ecotourism options for 4 locations across the world
 * Login system with user database
-* Ability to save locations to list in user profile
+
+* Ability to save locations to list in user profile (in progress)
 
 ## Technologies Used
 
@@ -48,13 +51,6 @@ This will start the developemet server, and you can view the app at http://local
 * HTML
 * CSS
 * JavaScript
-npm cors
-npm express
-npm mysql2
-npm react
-npm react-dom
-npm axios
-npm react-router-dom
 
 ## Contributing
 
@@ -64,4 +60,3 @@ If you'd like to contribute to Avo Traveler, please fork the repository and make
 
 This application was also deployed through vercel. Link below:
 [AVOTRAVELER](https://rv-capstone.vercel.app/)
-
