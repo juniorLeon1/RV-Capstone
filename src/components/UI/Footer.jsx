@@ -10,9 +10,9 @@ import "../../styles/Footer.css";
 
 function Footer() {
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
+    <MDBFooter style={{backgroundColor: "#eff3f3"}} className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="text-dark">
+        <div style={{backgroundColor: "#eff3f3"}}>
           <span>Get connected with us on social networks:</span>
         </div>
 
@@ -20,15 +20,15 @@ function Footer() {
           <a
             href="https://www.facebook.com/"
             className="me-4 text-reset"
-            style={{ color: "red" }}
+            style={{backgroundColor: "#eff3f3"}}
           >
-            <MDBIcon color="primary" fab icon="facebook-f" />
+            <MDBIcon style={{backgroundColor: "#eff3f3"}} fab icon="facebook-f" />
           </a>
           <a href="https://twitter.com/?lang=en" className="me-4 text-reset">
-            <MDBIcon color="primary" fab icon="twitter" />
+            <MDBIcon style={{backgroundColor: "#eff3f3"}} fab icon="twitter" />
           </a>
           <a href="https://www.instagram.com/" className="me-4 text-reset">
-            <MDBIcon color="warning" fab icon="instagram" />
+            <MDBIcon style={{backgroundColor: "#eff3f3"}} fab icon="instagram" />
           </a>
         </div>
       </section>
@@ -37,8 +37,8 @@ function Footer() {
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <h6 className="text-primary fw-bold mb-4">
-                <MDBIcon color="primary" icon="" className="me-3" />
+              <h6 className=" fw-bold mb-4">
+                <MDBIcon />
                 AvoTravler
               </h6>
               <p className="custom-color">
@@ -49,7 +49,7 @@ function Footer() {
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-primary fw-bold mb-4">DESTINATION</h6>
+              <h6 style={{Color: "#eff3f3 !important"}} className=" fw-bold mb-4">DESTINATION</h6>
               <p>
                 <a href="/destinations/charlotte" className="custom-color">
                   Charlotte
@@ -73,7 +73,7 @@ function Footer() {
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              <h6 className="text-primary fw-bold mb-4">CONTACT</h6>
+              <h6 className=" fw-bold mb-4" >CONTACT</h6>
               <p className="text-dark">
                 <MDBIcon color="dark" icon="home" className="me-2" />
                 1101 Red Ventures Dr, Fort Mill, SC 29707

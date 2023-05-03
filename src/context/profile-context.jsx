@@ -1,4 +1,4 @@
-import React, { useState, createContext, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 export const ProfileContext = createContext(null);
 
@@ -6,13 +6,15 @@ const ProfileContextProvider = (props) => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [role, setRole] = useState("");
 
-  const [data, setData] = useState([]);
+  const [userInfo, setUserInfo] = useState({});
+
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch("http://localhost:8800/users");
         const data = await response.json();
-        setData(data);
+        setUsers(data);
       } catch (err) {
         console.error("Error fetching data:", err);
       }
@@ -20,19 +22,8 @@ const ProfileContextProvider = (props) => {
     fetchData();
   }, []);
 
-  const tempUserInfo = [
-    {
-      id: 0,
-      roles: "",
-      userNames: "",
-      email: "",
-      passwords: "",
-    },
-  ];
-  const [userInfo, setUserInfo] = useState(tempUserInfo);
-
   const contextValue = {
-    data,
+    users,
     loggedIn,
     setLoggedIn,
     role,

@@ -21,17 +21,17 @@ function DestinationCards() {
     }
   };
 
-  return (
-    <div className="DestinationContainer">
-      {info.map((info) => (
-        <div className="item" key={info.id}>
-          {info.img && <img src={info.img} alt={info.location} />}
-          <h1>{info.location}</h1>
-          <Link className="Button" to={info.pathing}>More Info</Link>
-        </div>
-      ))}
+return (
+  <div className="DestinationContainers">
+  {info.map((info) => (
+    <div className="DestinationItem" key={info.id} style={{ backgroundImage: `url(${info.img})`, backgroundSize: "cover"}}>
+      <h1>{info.location}</h1>
+      <Link className="Button" to={info.pathing}>
+          More Info
+         </Link>
     </div>
-  );
-}
+  ))}
+</div>
+)}
 
 export default DestinationCards;

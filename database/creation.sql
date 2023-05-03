@@ -1,6 +1,7 @@
 -- create database avoTravelerDB;
 use avoTravelerDB;
 -- drop table destination;
+-- drop table users;
 
 create table destination(
 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -40,9 +41,11 @@ latitude decimal(10, 6)
     VALUES
     -- ("User", "John Doe", "johnD@gmail.com", "password123"),
     ("User", "Jimmy Jons", "jimmyJ@gmail.com", "password123");
-    
+
 
 select * from users;
+
+
 
 -- ALTER USER 'chingvang'@'localhost' IDENTIFIED BY 'password';
 -- GRANT ALL PRIVILEGES ON destination.* TO 'chingvang'@'localhost';
@@ -50,5 +53,5 @@ select * from users;
 -- ALTER USER 'juniorleon'@'localhost' IDENTIFIED BY 'password';
 -- GRANT ALL PRIVILEGES ON destination.* TO 'juniorleon'@'localhost';alter
 
- ALTER USER 'capellandiana'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON destination.* TO 'capellandiana'@'localhost';
+--  ALTER USER 'capellandiana'@'localhost' IDENTIFIED BY 'password';
+-- GRANT ALL PRIVILEGES ON destination.* TO 'capellandiana'@'localhost';
