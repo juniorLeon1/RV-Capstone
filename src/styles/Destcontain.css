@@ -73,11 +73,11 @@ section {
     padding: 0%;
   }
 }
-@media only screen and (max-width: 768px), (min-width: 450px)  {
+@media only screen and (min-width: 450px), (max-width: 768px)  {
   .food-container {
 display: block;
   }
-  .side-content {
+  /* .side-content {
     display: none;
-  }
+  } */
 }
