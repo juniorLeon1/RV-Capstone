@@ -24,7 +24,7 @@
 .sort-drpdwn:hover,
 .create-list-button:hover,
 .remove-list-button:hover {
-  background-color: #3b71ca;
+  box-shadow: 1px 1px 2px black;
   color: white;
 }
 
