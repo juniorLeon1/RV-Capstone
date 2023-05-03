@@ -42,9 +42,7 @@ function Footer() {
                 AvoTravler
               </h6>
               <p className="custom-color">
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+              AvoTraveler is dedicated to providing our users with sustainabe ways to travel. We currently offer 4 locations to choose from. Our comprehensive guides will help you see the world while also leaving the world a better place. 
               </p>
             </MDBCol>
 
