@@ -28,3 +28,8 @@
 .user-email {
   margin: 0;
 }
+@media only screen and (max-width: 400px)  { 
+  .left-info {
+    padding: 0 0 50px 10px;
+  }
+}
